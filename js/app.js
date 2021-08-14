@@ -1,15 +1,20 @@
 
+
+
+// page4
+
+
 function myFunction() {
 
-    document.getElementById("demo").innerHTML = "Dr.. Salman Habash, born in 1963. He completed his secondary education from Terra Sanctuary College in Amman in 1980. He completed his general medicine studies in 1987 with a grade of “very good.” He completed his specialization in ophthalmology in 1991 with distinction. Doctor of Ophthalmology in 1993 for heavy fluids in retinal surgery And the vitreous fluid. Dr. Salman Habash completed courses in Europe and America in refractive surgery and cataract surgery.";
-  }
+  document.getElementById("demo").innerHTML = "Dr.. Salman Habash, born in 1963. He completed his secondary education from Terra Sanctuary College in Amman in 1980. He completed his general medicine studies in 1987 with a grade of “very good.” He completed his specialization in ophthalmology in 1991 with distinction. Doctor of Ophthalmology in 1993 for heavy fluids in retinal surgery And the vitreous fluid. Dr. Salman Habash completed courses in Europe and America in refractive surgery and cataract surgery.";
+}
 
 
 
 
- function dactorawin(){
+function dactorawin(){
 
-     document.getElementById('awni').innerHTML = "Dr. Awni Abu Halima Member of the American University of Psychiatry, Member of the International Psychiatric Association, Member of the Jordanian Psychiatric Association, Technical and Academic Director of the National Center for Mental Health Hospital - formerly -, Medical Director of Al-Amal Hospital / Al-Qurayyat - Saudi Arabia - previously -";
+  document.getElementById('awni').innerHTML = "Dr. Awni Abu Halima Member of the American University of Psychiatry, Member of the International Psychiatric Association, Member of the Jordanian Psychiatric Association, Technical and Academic Director of the National Center for Mental Health Hospital - formerly -, Medical Director of Al-Amal Hospital / Al-Qurayyat - Saudi Arabia - previously -";
 
  }
 
@@ -53,7 +58,7 @@ function mohmad(){
 }
 
 
-
 // function Qassem(){
 //     document.getElementById('Qassem').innerHTML ="Dr. Qassem has more than 13 years of experience in Britain, starting to work in London in 2006, where he trained in its largest hospital. After that, he moved to work in endoscopic surgery in the well-known city of Bristol and then France. After that, he got a job as a certified consultant in London hospitals. Where he worked for four years. He has several articles published in international journals, in laparoscopic surgery and gynecological urology. Professor of the Faculty of Medicine. Member of the British Jordanian Society. Read more on the doctor's website below. Resident training supervisor in private sector hospitals."}
 
+// page4
