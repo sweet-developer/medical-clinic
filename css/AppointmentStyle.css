@@ -104,7 +104,7 @@ height:100%;
 
 main section 
 {
-    background-image: url('/img/miroshn.jpg');
+    background-image: url('img/miroshn.jpg');
     background-position: 95% 1%;
   /*   background-color: rgb(76 114 252 / 86%);
     background-blend-mode: lighten;  */
