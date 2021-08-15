@@ -32,6 +32,7 @@ main > section:nth-of-type(1) {
   grid-template-columns: repeat(2, 1fr);
   line-height: 2;
   border-radius: 50px;
+  margin-left: -34px;
 }
 
 main > section:nth-of-type(1) h3 {
@@ -109,7 +110,7 @@ html, body {
 
 body {
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-    background-size: 800% 800%;
+    background-size: 500% 500%;
     animation: gradient 15s ease infinite;
 }
 
@@ -186,7 +187,7 @@ label span {
 }
 
 .card {
-  font-size: 18px;
+font-size: 18px;
 }
 
 
