@@ -14,17 +14,24 @@
 
 <body>
 
-    <header>
+    <header id='header'>
         <h1><span> Midical </span>Clinic</h1>
         <nav class="navbar">
+
             <a href="index.html">home</a>
             <a href="diseases.html">diseases</a>
+
+            <a class ='active' href="index.html">home</a>
+            <a  href="diseases.html">diseases</a>
+
             <a href="hospitals.html">hospitals</a>
-            <a class="active" href="Appointments.html">Appointments</a>
+            <a href="Appointments.html">Appointments</a>
             <a href="doctors.html">doctors</a>
             <a href="contact-US.html">contact US</a>
         </nav>
+           
     </header>
+    
     <main>
         <section>
             <div class="overlay"></div>
@@ -47,7 +54,7 @@
                         <h2>Free Consultation</h2>
                         <p>Providing medical consultation to patients. Book an appointment by filling the form.</p>
                     </div>
-                    <form action="" id="AppointmentForm">
+                    <form action="" id="AppointmentForm" autocomplete="off">
                         <div class="fildContaner">
                             <div class="formFild">
                                 <input type="text" id="firstName" placeholder="First Name" class="iput-text">
@@ -142,7 +149,7 @@
     </footer>
 
 
-
+    <script src="./js/AppintmentCounter.js"></script>
     <script src="./js/AppintmentApp.js"></script>
     <script src="./js/app.js"></script>
 </body>
