@@ -1,0 +1,126 @@
+html, body {
+  width: 100%;
+  height:100%;
+}
+
+body {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+/* Specifically Targeting the Main Header (not to be confused with headers within cards) */
+
+body>header {
+  background: #062f4f;
+  border-bottom: 1px solid #ddd;
+  overflow: hidden;
+  padding: .5em 5em;
+}
+
+
+
+body>header nav {
+  float: right;
+  line-height: 2.5em;
+}
+
+body>header nav li {
+  display: inline-block;
+}
+
+body>header nav li a {
+  color: #eee;
+  padding: 0 .5em;
+  text-decoration: none;
+}
+
+#itemCount {
+  color: #ccc;
+  font-size: .75em;
+  line-height: 1em;
+  margin-left: -.5em;
+}
+
+body>header h1 {
+  float: left;
+  font-size: 2.5em;
+  color: #fff;
+  text-shadow: -1px -1px 1px #666, 1px 1px 1px #000;
+  opacity: 0.75;
+}
+form {
+  margin: auto;
+  width: 50%;
+  float: left;
+}
+
+input[type=number],
+select {
+  height: 1.75em;
+  width: 100%;
+}
+
+input[type=submit] {
+  float: right;
+}
+
+label {
+  display: block;
+  margin-bottom: 1em;
+}
+
+label span {
+  display: block;
+  padding-bottom: .25em;
+}
+
+.card#cartContents {
+  background: #f5f5f5;
+  padding: 1.5em;
+  box-shadow: 0 3px 2px #777;
+}
+
+
+/* Styles for the table on the cart page */
+#form thead tr th {
+  border-bottom: 3px solid #062f4f;
+  font-weight: bold;
+}
+
+
+#form tr td {
+  border-bottom: 1px solid #062f4f;
+  border-collapse: none;
+  color: #777;
+  padding: .5em 1em;
+  text-align: center;
+  width: auto;
+}
+
+#form tr td:last-child,
+#form tr th:last-child {
+  text-align: left;
+  width: 100%;
+}
+
+#form tr td:first-child {
+  color: red;
+  cursor: pointer;
+}
+
+.search {
+  background-color: #062f4f;
+  color: #fff;
+}
