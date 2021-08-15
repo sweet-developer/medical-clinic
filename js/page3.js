@@ -13,7 +13,7 @@ const geolocation = () => {
 }
 
 const rit = (position) => {
-    
+
     my_preview = `https://www.google.com/maps/?q=${position.coords.latitude},${position.coords.longitude}`;
     preview.innerHTML = `<a target='_blank' href='${my_preview}>Google Maps!</a><br><br>`;
     let element = document.getElementById('osm-map');
@@ -45,4 +45,12 @@ const fileit = (error) => {
             output.innerHTML = "Unknown Error please try again";
             break;
     }
+}
+
+//check if local storage have value or not 
+if (localStorage.colorOption !== null) {
+    //set color web site from local storage 
+    document.documentElement.style.setProperty('--color', localStorage.colorOption);
+
+
 }

@@ -9,6 +9,10 @@ body {
     animation: gradient 15s ease infinite;
 }
 
+:root {
+  --color: #3a9dca;
+}
+
 @keyframes gradient {
     0% {
         background-position: 0% 50%;
@@ -23,7 +27,7 @@ body {
 /* Specifically Targeting the Main Header (not to be confused with headers within cards) */
 
 body>header {
-  background: #062f4f;
+  background: var(--color);
   border-bottom: 1px solid #ddd;
   overflow: hidden;
   padding: .5em 5em;
@@ -57,7 +61,7 @@ body>header h1 {
   float: left;
   font-size: 2.5em;
   color: #fff;
-  text-shadow: -1px -1px 1px #666, 1px 1px 1px #000;
+  text-shadow: -1px -1px 1px #666, 1px 1px 1px var(--color);
   opacity: 0.75;
 }
 form {
@@ -95,13 +99,13 @@ label span {
 
 /* Styles for the table on the cart page */
 #form thead tr th {
-  border-bottom: 3px solid #062f4f;
+  border-bottom: 3px solid var(--color);
   font-weight: bold;
 }
 
 
 #form tr td {
-  border-bottom: 1px solid #062f4f;
+  border-bottom: 1px solid var(--color);
   border-collapse: none;
   color: #777;
   padding: .5em 1em;
@@ -121,6 +125,6 @@ label span {
 }
 
 .search {
-  background-color: #062f4f;
+  background-color: var(--color);
   color: #fff;
 }

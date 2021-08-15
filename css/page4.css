@@ -7,7 +7,9 @@
     background: #000 url(https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/video/itCjTBE/blue-abstract-moving-flowing-waves-on-white-background-blurred-smooth-design-video-animation-ultra-hd-4k-3840x2160_rffdhgnp_thumbnail-1080_01.png);
 
 } */
-
+:root {
+  --color: #3a9dca;
+}
 main{
     display: grid;
     grid-template-columns: auto auto auto auto;
@@ -38,7 +40,7 @@ h1{
 
 img{
     
-        border: 10px solid #3a9dca;
+        border: 10px solid var(--color);
         width: 250px;
         height: 400px;
     
@@ -47,7 +49,7 @@ img{
 
 
 button {
-    background-color: #3a9dca;
+    background-color: var(--color);
     border: none;
     color: white;
     padding: 8px 32px;
@@ -93,7 +95,7 @@ button {
     color: #777;
   }
   header h1 span {
-    color: #3a9dca;
+    color: var(--color);
   }
   
   header a {
@@ -113,20 +115,20 @@ button {
   
     padding: 10px;
     font-weight: bold;
-    border-bottom: 2px solid #3a9dca;
-    color: #3a9dca;
+    border-bottom: 2px solidvar(--color);
+    color: var(--color);
   }
   
   .active {
     font-weight: bold;
-    border-bottom: 2px solid #3a9dca;
-    color: #3a9dca;
+    border-bottom: 2px solid var(--color);
+    color: var(--color);
   }
  
   footer {
     display: flex;
     justify-content: space-between;
-    background-color: #3a9dca;
+    background-color: var(--color);
     padding: 15px;
     align-items: center;
     margin-top: 100px;

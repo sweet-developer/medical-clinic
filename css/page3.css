@@ -2,9 +2,11 @@ body {
     background: #eee;
     font-family: Roboto, "Helvetica Neue", sans-serif;
 }
-
+:root {
+  --color: #3a9dca;
+}
 h2 {
-    color: #7c795d;
+    color: var(--color);
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 32px;
     font-weight: 400;
@@ -36,14 +38,14 @@ h2 {
     padding: 10px;
     cursor: pointer;
     border: none;
-    background-color: #4285f4;
+    background-color:  var(--color);
     color: #fff;
     font-size: 1.6vw;
 }
 
 #output {
     font-size: 15px;
-    border-top: 1px solid #4285f4;
+    border-top: 1px solid  var(--color);
     padding-top:5px;
     margin-right:5%;
     margin-left:5%;
@@ -90,7 +92,7 @@ body {
     color: #777;
   }
   header h1 span {
-    color: #3a9dca;
+    color:  var(--color);
   }
   
   header a {
@@ -110,14 +112,14 @@ body {
   
     padding: 10px;
     font-weight: bold;
-    border-bottom: 2px solid #3a9dca;
+    border-bottom: 2px solid  var(--color);
     color: #3a9dca;
   }
   
   .active {
     font-weight: bold;
-    border-bottom: 2px solid #3a9dca;
-    color: #3a9dca;
+    border-bottom: 2px solid  var(--color);
+    color:  var(--color);
   }
   /*satrt main  */
   
@@ -132,26 +134,26 @@ body {
   }
   
   main .content h2 {
-    text-shadow: 1px 1px 5px #3a9dca;
-    color: #3a9dca;
+    text-shadow: 1px 1px 5px  var(--color);
+    color:  var(--color);
   }
   
   main .content p {
-    text-shadow: 1px 1px 5px #3a9dca;
+    text-shadow: 1px 1px 5px  var(--color);
     color: #3a9dca;
     margin-bottom: 40px;
   }
   
   main .content a {
     cursor: pointer;
-    color: #3a9dca;
-    border: 2px solid #3a9dca;
+    color:  var(--color);
+    border: 2px solid  var(--color);
     padding: 10px 20px;
     transition: 0.5s;
   }
   
   main .content a:hover {
-    background-color: #3a9dca;
+    background-color:  var(--color);
     color: #fff;
   }
   
@@ -193,7 +195,7 @@ body {
   footer {
     display: flex;
     justify-content: space-between;
-    background-color: #3a9dca;
+    background-color:  var(--color);
     padding: 15px;
     align-items: center;
     /* margin: 0; */
