@@ -1,6 +1,6 @@
 //start craete navbar effect
 
-// get buttons array
+//get buttons array
 let Btns = document.querySelectorAll('.navbar a');
 // loop for each button
 Btns.forEach(function (btn) {
@@ -8,7 +8,7 @@ Btns.forEach(function (btn) {
   btn.addEventListener('click', function (e) {
 
     // prevent refresh browser
-    e.preventDefault();
+    // e.preventDefault();
 
     // delete all active class on btns
     for (let i = 0; i < Btns.length; i++) {
