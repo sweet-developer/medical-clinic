@@ -12,7 +12,7 @@ const description=['It is a viral infection of the nose and throat.',
   'is an intestinal parasite of humans.',
   'is a contagious skin disease that appears in the form of severe skin ulcers that escalate to cause nerve damage in the arms, legs and skin areas around the body, as well as muscle weakness.',
   'It is a severe respiratory infection characterized by severe coughing fits accompanied by difficulty in breathing and wheezing in the chest'];
-
+const img=['flu.jpg','insomnia.jpg','smallpox.jpg','measles.jpg','covid.jpg','spring.jpg','diarrhea.jpg','hookworm.jpg','leprosy.jpg','pertussis.jpg'];
 
 // flu disease symptoms and treatment
 const fluSymptom = ['Fever or feeling feverish/having chills.',
@@ -89,16 +89,19 @@ const pertussisTreatment=['Young children/ babys are admitted to hospital for tr
   'you can use the Antibiotics for older childern and adults.'];
 
 //===================================================(variable declaration)===============================
-let select=document.getElementById('diseases');
-let option;
-let mainArticle=document.getElementById('informationArticle');
-let symptomDiv=document.getElementById('symptoms');
-let treatmentDiv=document.getElementById('treatment');
 
-let object=[];
-let totalSymptom=[8,7,6,8,11,6,9,3,2,2];
-let totalTreatment=[2,2,1,1,3,1,2,1,3,3];
+let select=document.getElementById('diseases'); //to select 'select tag' that hold the list
+let option; // 'option tag' that hold the name of diseases
+let mainArticle=document.getElementById('informationArticle'); //to select the article which hold the content
+let symptomDiv=document.getElementById('symptoms'); // select symptoms div that hold symptoms section
+let treatmentDiv=document.getElementById('treatment'); // select treatment div that hold treatment section
+
+let object=[]; // array to contain the objects whicj are the diseases
+let totalSymptom=[8,7,6,8,11,6,9,3,2,2]; // array contains the total number of symptoms for each disease
+let totalTreatment=[2,2,1,1,3,1,2,1,3,3]; //array contains the total number of treatment for each disease
+
 //================================================(constructor declaration)==============================
+
 function Disease(name, description){
   this.name=name;
   this .description=description;
@@ -106,6 +109,15 @@ function Disease(name, description){
   this.treatment=[];
   object.push(this);
 }
+//=======================================(create a new object depends on number of diseases)============================
+
+for(let i=0; i<diseaseName.length;i++){
+  new Disease (diseaseName[i],description[i]);
+}
+//===============================(calling)=============================================================================
+
+pushName();
+
 //=================================(push name of diseases to the list)=============================================
 function pushName(){
   for(let i=0; i<diseaseName.length;i++){
@@ -114,19 +126,9 @@ function pushName(){
     console.log(diseaseName[i]);
     select.appendChild(option);
   }
-
 }
-//=======================================(create a new object depends on number of diseases)============================
-for(let i=0; i<diseaseName.length;i++){
-  new Disease (diseaseName[i],description[i]);
-}
-
-//===============================(calling and testing)===================================================================
-pushName();
-
-
-
 //==================================(eventlistener)================================================================
+
 let button=document.getElementById('button');
 //console.log(button);
 button.addEventListener('click',eventHandler);
@@ -135,16 +137,10 @@ function eventHandler(event){
   event.preventDefault();
   var text = select.options[select.selectedIndex].text;
 
-
-  console.log(text);
   clear();
   render(text);
-  console.log(object);
-
-
-
-
 }
+//==================================(clear function to clear the page after render)=============================
 
 function clear(){
 
@@ -157,14 +153,11 @@ function clear(){
   while(treatmentDiv.firstChild)
     treatmentDiv.removeChild(treatmentDiv.firstChild);
 }
-
-
 //===========================================(render function to push disease information to the body of page)===========
+
 function render(text){
 
   for(let i=0; i<diseaseName.length;i++){
-
-
     if(i===0 && text === diseaseName[i]){ // to push to flu disease its symptoms and view it in an un-orderlsit
       console.log(text);
       let h3Element=document.createElement('h3');
@@ -203,8 +196,7 @@ function render(text){
       }
       break;
     }
-
-
+    //============================================
 
     if(i===1 && text===diseaseName[i]){ // to push to insomnia disease its symptoms and its treatment and view it in an un-orderlsit
       console.log(text);
@@ -243,7 +235,7 @@ function render(text){
       }
       break;
     }
-
+    //============================================
 
     if(i===2 && text===diseaseName[i]){ // to push to smallpox disease its symptoms and its treatment and view it in an un-orderlsit
       console.log(text);
@@ -282,6 +274,7 @@ function render(text){
       }
       break;
     }
+    //============================================
 
     if(i===3 && text===diseaseName[i]){ // to push to measles disease its symptoms and its treatment and view it in an un-orderlsit
       console.log(text);
@@ -320,7 +313,7 @@ function render(text){
       }
       break;
     }
-
+    //============================================
 
     if(i===4 && text===diseaseName[i]){ // to push to covid-19 disease its symptoms and its treatment and view it in an un-orderlsit
       console.log(text);
@@ -359,7 +352,7 @@ function render(text){
       }
       break;
     }
-
+    //============================================
 
     if(i===5 && text===diseaseName[i]){ // to push to spring allergy its symptoms and its treatment and view it in an un-orderlsit
       console.log(text);
@@ -398,6 +391,7 @@ function render(text){
       }
       break;
     }
+    //============================================
 
     if(i===6 && text===diseaseName[i]){ // to push to diarrhea disease its symptoms and its treatment and view it in an un-orderlsit
       console.log(text);
@@ -436,6 +430,7 @@ function render(text){
       }
       break;
     }
+    //============================================
 
     if(i===7 && text===diseaseName[i]){ // to push to hookworm disease its symptoms and its treatment and view it in an un-orderlsit
       console.log(text);
@@ -474,6 +469,7 @@ function render(text){
       }
       break;
     }
+    //============================================
 
     if(i===8 && text===diseaseName[i]){ // to push to leprosy disease its symptoms and its treatment and view it in an un-orderlsit
       console.log(text);
@@ -512,6 +508,7 @@ function render(text){
       }
       break;
     }
+    //============================================
 
     if(i===9 && text===diseaseName[i]) { // to push to leprosy disease its symptoms and its treatment and view it in an un-orderlsit
       console.log(text);
