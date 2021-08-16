@@ -8,26 +8,29 @@
     <title> Medical Clinic</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/page2.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
     <header>
         <h1><span> Medical </span>Clinic</h1>
-        <nav class="navbar">
-            <a href="index.html">home</a>
-            <a class="active" href="diseases.html">diseases</a>
+        <nav>
+            <a class='active' href="">home</a>
+            <a href="./diseases.html">diseases</a>
             <a href="hospitals.html">hospitals</a>
             <a href="Appointments.html">Appointments</a>
             <a href="doctors.html">doctors</a>
-            <a href="contact-US.html">contact US</a>
+            <a href="about-as.html">About US</a>
+            <a href="contact.html">contact US</a>
         </nav>
     </header>
-    <main>
+    <main class="formSection">
         
         <form>
             <label for="disease"> Disease</label>
-            <input list="diseases" name="disease" id="disease" placeholder="  Choose a disease ...">
-            <datalist id="diseases">
+            <!-- <input list="diseases" name="disease" id="disease" placeholder="  Choose a disease ..."> -->
+            <select id="diseases">
                 <!-- <option value="Flu" class="option">
                 <option value="Insomnia" class="option">
                 <option value="Smallpox" class="option">
@@ -38,15 +41,15 @@
                 <option value="Hookworm" class="option">
                 <option value="Leprosy" class="option">
                 <option value="pertussis" class="option"> -->
-            </datalist>
+            </select>
             <button type="submit" id="button"> Select </button>
         </form>
-        <article class="informationArticle">
+        <article id="informationArticle">
             <!-- <h3> Disease name </h3>
             <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, ab error. Temporibus dignissimos
                 sunt perspiciatis vero reiciendis nemo repellendus ullam deserunt quos fugiat consequuntur, ex quasi aut
                 iure? Esse, vitae.</p> -->
-            <div class="symptoms">
+            <div id="symptoms">
                 <!-- <h4>symptoms:</h4>
                 <ul>
                     <li>one</li>
@@ -55,7 +58,7 @@
                 </ul> -->
             </div>
 
-            <div class="treatment">
+            <div id="treatment">
                 <!-- <h4>medical treatment</h4>
                 <ul>
                     <li>one</li>

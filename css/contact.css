@@ -1,0 +1,245 @@
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px minmax(calc(100vh - 190px), 1fr) 50px;
+  gap: 20px;
+}
+
+
+main {
+  display: grid;
+  gap: 20px;
+  padding: 50px;
+}
+
+main h2 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+main > section:nth-of-type(1) {
+  background: #f5f5f5;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  line-height: 2;
+  border-radius: 50px;
+  margin-left: -34px;
+}
+
+main > section:nth-of-type(1) h3 {
+  font-size: 22px;
+  font-weight: 700;
+  grid-column: span 3;
+  border-bottom: 1px solid rgba(225,225,225,.5);
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+main > section:nth-of-type(2) {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}
+
+main > section:nth-of-type(2) article:nth-of-type(1) {
+  grid-column: span 2;
+}
+
+main > section:nth-of-type(2) article:nth-of-type(1) form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-radius: 25px;
+}
+
+main > section:nth-of-type(2) article:nth-of-type(1) input {
+  height: 35px;
+  text-transform: capitalize;
+  border: 1px solid #3a9dca;
+  margin-left: 10px;
+  width: 197%;
+}
+
+main > section:nth-of-type(2) article:nth-of-type(1) textarea {
+  grid-column: span 2;
+  border: 1px solid #3a9dca;
+  text-transform: capitalize;
+  padding: 10px;
+}
+
+main > section:nth-of-type(2) article:nth-of-type(1) button {
+  grid-column: 2 / 3;
+  height: 40px;
+  border: none;
+  background: rgba(47,93,98,0.8);
+  color: #f5f5f5;
+  text-transform: uppercase;
+  transition: all 500ms;
+  cursor: pointer;
+}
+
+main > section:nth-of-type(2) article:nth-of-type(1) button:hover {
+  background: rgba(47,93,98,1);
+  color: #f5f5f5;
+}
+
+main > section:nth-of-type(2) article:nth-of-type(2) {
+  overflow: hidden;
+  grid-column: span 1;
+  object-fit: cover;
+}
+
+main > section:nth-of-type(2) article:nth-of-type(2) img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+html, body {
+  width: 100%;
+  height:100%;
+}
+
+body {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 500% 500%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+/* Specifically Targeting the Main Header (not to be confused with headers within cards) */
+
+
+
+body>header nav {
+  float: right;
+  line-height: 2.5em;
+}
+
+body>header nav li {
+  display: inline-block;
+}
+
+body>header nav li a {
+  color: #eee;
+  padding: 0 .5em;
+  text-decoration: none;
+}
+
+#itemCount {
+  color: #ccc;
+  font-size: .75em;
+  line-height: 1em;
+  margin-left: -.5em;
+}
+
+
+
+
+form {
+  margin: auto;
+  float: left;
+  background-color: #f5f5f5;
+}
+
+input[type=number],
+select {
+  height: 2.75em;
+  width: 197%;
+  border: 1px solid #3a9dca;
+  margin-left: 10px;
+  margin-bottom: 21px;
+
+}
+
+input[type=submit] {
+  background-color: #3a9dca;
+  color: #f5f5f5;
+}
+
+label {
+  display: block;
+  margin-bottom: 1em;
+  margin-left: 10px;
+}
+
+label span {
+  display: block;
+  padding-bottom: .25em;
+}
+
+.card {
+font-size: 18px;
+}
+
+
+/* Styles for the table on the cart page */
+#form thead tr th {
+  border-bottom: 3px solid #062f4f;
+  font-weight: bold;
+}
+
+
+#form tr td {
+  border-bottom: 1px solid #062f4f;
+  border-collapse: none;
+  color: #777;
+  padding: .5em 1em;
+  text-align: center;
+  width: auto;
+}
+
+#form tr td:last-child,
+#form tr th:last-child {
+  text-align: left;
+  width: 100%;
+}
+
+#form tr td:first-child {
+  color: red;
+  cursor: pointer;
+}
+
+.search {
+  background-color: #3a9dca;
+  color: #fff;
+  text-align: center;
+  list-style-type: none;
+  border-radius: 25px;
+  border-bottom: 3px solid #062f4f;
+}
+.search input {
+  height: 28px;
+  border: tomato;
+}
+.search button{
+  background-color: tomato;
+  height: 28px;
+font-size: 15px;
+}
+.search button:hover{
+  background-color: teal;
+}
+#itemCount {
+  color: black;
+    font-size: 21px;
+    font-weight: bold;
+}
