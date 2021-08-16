@@ -1,0 +1,129 @@
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 80px minmax(calc(100vh - 170px), 1fr) 50px;
+  gap: 20px;
+}
+main {
+  background: #e1e1e1;
+  display: grid;
+  gap: 20px;
+  grid-column: 1 / -1;
+  grid-row: 1 / 3;
+}
+
+.hero-section {
+  height: 600px;
+  object-fit: cover;
+  position: relative;
+  overflow: hidden;
+  background-color: #3a9dca;
+  font-family: sans-serif;
+text-align: center;
+}
+
+.hero-section::after {
+  position: absolute;
+  content: '';
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 0 30px;
+}
+
+.services h2 {
+  grid-column: span 3;
+}
+
+.services article {
+  height: 300px;
+  background: #3a9dca;
+}
+
+h2 {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 28px;
+  font-weight: 700;
+  position: relative;
+  margin-top: 20px;
+}
+
+h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  width: 100px;
+  left: 50%;
+  height: 2px;
+  transform: translateX(-50%);
+  background: #364547;
+}
+
+.gallery {
+  height: auto;
+  width: 100%;
+  padding: 45px;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 2vh;
+  grid-auto-flow: dense;
+}
+
+main .gallery .img {
+  width: 100%;
+  height: 100%;
+}
+
+main .gallery .img:nth-of-type(1) {
+  grid-column-start: span 2;
+  grid-row-start: span 2;
+  background: #222;
+}
+
+main .gallery .img:nth-of-type(3) {
+  grid-column-start: span 2;
+  grid-row-start: span 2;
+  background: #444222;
+}
+
+main .gallery .img:nth-of-type(5) {
+  grid-column-start: span 2;
+  grid-row-start: span 1;
+  background: #222444;
+
+}
+
+main .gallery .img:nth-of-type(7) {
+  /* grid-column-start: span 2; */
+  grid-row-start: span 1;
+  background: #222325;
+
+}
+
+main .gallery .img img {
+  width: 100%;
+  height: 100%;
+}
+
+.contact {
+  height: 500px;
+  background: #536162;
+}
+
+article img {
+  width: 100%;
+  height: 60%;
+}
+.art p, h3{
+  text-align: center;
+  margin: 10px;
+}

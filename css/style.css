@@ -172,13 +172,12 @@ main .content a:hover {
   color: #fff;
 }
 
-main img {
+.slider img {
   width: 100%;
   height: 100%;
   margin: 0;
   object-fit: cover;
   position: absolute;
-  opacity: 0;
   transition: opacity 1s;
   z-index: 1;
 }
