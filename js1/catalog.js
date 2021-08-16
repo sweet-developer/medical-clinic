@@ -15,9 +15,12 @@ function populateForm() {
         selectElement.appendChild(optionItem);
         optionItem.textContent = Product.allProducts[i].name;
     }
-        for (let i = 0; i< form.items.length;i++){
+        for (let i = 0; i< 8;i++){
         let li_1 = document.createElement('li');
-        li_1.innerHTML = `The name ${form.items[i].fname}`;
+        li_1.innerHTML = `The Name ${form.items[i].fname}
+                          The Email ${form.items[i].email}
+                          The Location ${form.items[i].Location}
+                          The enquiry ${form.items[i].items}`;
         Contents_form.appendChild(li_1);
         count ++
         }

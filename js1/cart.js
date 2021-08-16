@@ -50,23 +50,32 @@ function showForm() {
     let td1 = document.createElement('td')
     td1.textContent = form.items[j].fname
 
+    
     tr.appendChild(td1)
     let td2 = document.createElement('td')
     td2.textContent = form.items[j].email
     tr.appendChild(td2)
 
     let td3 = document.createElement('td')
-    td3.textContent = form.items[j].phone
+    td3.textContent = form.items[j].Location
     tr.appendChild(td3)
 
 
     let td4 = document.createElement('td')
-    td4.textContent = form.items[j].items
+    td4.textContent = form.items[j].phone
     tr.appendChild(td4)
 
     let td5 = document.createElement('td')
-    td5.textContent = form.items[j].Message
+    td5.textContent = form.items[j].history
     tr.appendChild(td5)
+
+    let td6 = document.createElement('td')
+    td6.textContent = form.items[j].items
+    tr.appendChild(td6)
+
+    let td7 = document.createElement('td')
+    td7.textContent = form.items[j].Message
+    tr.appendChild(td7)
   }
 }
 
@@ -89,56 +98,62 @@ function remove_Item(event) {
 }
 
 
-let search = document.getElementById('search');
+let search = document.getElementById('search1');
+// let search_value = search.value;
 let show_result = document.getElementById('show_result');
-
 show_result.addEventListener('click', chartResult)
-function chartResult() {
-
-  let count = 0;
+function chartResult(event) {
+  console.log(search.value)
 
   for (let i = 0; i < form.items.length; i++) {
-    do {
-      count++;
-    }
-   
-    while (search === form.items[i].fname) {
+    // search.value == form.items[i].fname
+    if (search.value == form.items[i].fname) {
 
-      let tr = document.createElement('tr')
-      tr.id = "row" + i
-      tr.className = "search";
-      tbody.appendChild(tr)
+      console.log(search.value)
 
-      let td = document.createElement('td')
-      td.textContent = `Result Of search`;
-      tr.appendChild(td)
-      formArr.push(td.id)
+      let tr2 = document.createElement('tr')
+      tr2.id = "row" + i
+      tr2.className = "search";
+      tbody.appendChild(tr2)
+
+      let tedee = document.createElement('td')
+      tedee.textContent = `Result Of search`;
+      tr2.appendChild(tedee)
+      formArr.push(tedee.id)
 
       let tede = document.createElement('td')
       tede.textContent = form.items[i].fname
-      tr.appendChild(tede)
+      tr2.appendChild(tede)
 
       let tede1 = document.createElement('td')
       tede1.textContent = form.items[i].email
-      tr.appendChild(tede1)
+      tr2.appendChild(tede1)
 
       let tede2 = document.createElement('td')
-      tede2.textContent = form.items[i].phone
-      tr.appendChild(tede2)
+      tede2.textContent = form.items[i].Location
+      tr2.appendChild(tede2)
 
       let tede3 = document.createElement('td')
-      tede3.textContent = form.items[i].items
-      tr.appendChild(tede3)
+      tede3.textContent = form.items[i].phone
+      tr2.appendChild(tede3)
 
       let tede4 = document.createElement('td')
-      tede4.textContent = form.items[i].Message
-      tr.appendChild(tede4)
+      tede4.textContent = form.items[i].history
+      tr2.appendChild(tede4)
 
-    }
+      let tede5 = document.createElement('td')
+      tede5.textContent = form.items[i].items
+      tr2.appendChild(tede5)
+
+      let tede6 = document.createElement('td')
+      tede6.textContent = form.items[i].Message
+      tr2.appendChild(tede6)
     
-
-    // console.log(name_array);
   }
+  }
+
+  // show_result.removeEventListener('click',chartResult)
+
 }
 
 
