@@ -39,7 +39,7 @@ DrowTable();
  }
 
 
-
+//dorw table
   function DrowTable ()
  {
     let tableBody = document.querySelector("tbody");
@@ -52,13 +52,7 @@ DrowTable();
       
       let trElement = document.createElement('tr');
        
-          let tdElement1 = document.createElement('td');
-           tdElement1.textContent='Delete';
-          tdElement1.setAttribute('id', patientAppintmetn.patients[i].firstName);
-          tdElement1.setAttribute("style", "color:  red;");
-          tdElement1.setAttribute("style", "cursor: pointer;"); 
-          tdElement1.addEventListener('click', removePationet);
-          trElement.appendChild(tdElement1);
+          
   
          let tdElement2 = document.createElement('td');
         tdElement2.textContent=patientAppintmetn.patients[i].firstName +" "+patientAppintmetn.patients[i].lastName;
@@ -79,13 +73,30 @@ DrowTable();
          let tdElement6 = document.createElement('td');
         tdElement6.textContent=patientAppintmetn.patients[i].appointmentTime;
          trElement.appendChild(tdElement6);
+
+         let tdElement1 = document.createElement('td');
+           tdElement1.textContent='Delete';
+          tdElement1.setAttribute('id', patientAppintmetn.patients[i].firstName);
+          tdElement1.setAttribute("style", "color:  red;");
+          tdElement1.setAttribute("style", "cursor: pointer;"); 
+          tdElement1.addEventListener('click', removePationet);
+          trElement.appendChild(tdElement1);
   
   
          tableBody.appendChild(trElement);
  }
 } 
 
+//clear All table Rows
+function ClearTable (){
+    let tableBody = document.querySelector("tbody");
+    while(tableBody.hasChildNodes()){
 
+        tableBody.removeChild(tableBody.firstChild);
+    }
+}
+
+// remove Pationt 
 function removePationet(event)
 {  event.preventDefault();
     let specificPatient = event.target.id
@@ -105,6 +116,142 @@ function removePationet(event)
   location.reload();
 
     
+
+}
+
+
+
+
+let gitButton1 =  document.getElementById("allButton");
+gitButton1.addEventListener('click',AllAppointment);
+
+
+//Button to view all the appoinmetns 
+function AllAppointment(){
+
+    gitButton1.setAttribute("style", "visibility: hidden;");
+    let gitappontPatient = JSON.parse(localStorage.getItem('patientAppoint'));
+     let tableBody = document.querySelector("tbody");
+     ClearTable();
+
+     for (let i = 0 ; i< gitappontPatient.length ;i++)
+    {
+        
+         let trElement = document.createElement('tr');
+       
+          
+    
+         let tdElement2 = document.createElement('td');
+         tdElement2.textContent=gitappontPatient[i].firstName +" "+gitappontPatient[i].lastName;
+         trElement.appendChild(tdElement2);
+  
+         /* let tdElement3 = document.createElement('td');
+        tdElement3.textContent=;
+         trElement.appendChild(tdElement3);
+ */
+         let tdElement4 = document.createElement('td');
+         tdElement4.textContent=gitappontPatient[i].phone;
+         trElement.appendChild(tdElement4);
+
+         let tdElement5 = document.createElement('td');
+         tdElement5.textContent=gitappontPatient[i].appointmentDate;
+         trElement.appendChild(tdElement5);
+         
+         let tdElement6 = document.createElement('td');
+         tdElement6.textContent=gitappontPatient[i].appointmentTime;
+         trElement.appendChild(tdElement6);
+
+         let tdElement1 = document.createElement('td');
+           tdElement1.textContent='Delete';
+          tdElement1.setAttribute('id', gitappontPatient[i].firstName);
+          tdElement1.setAttribute("style", "color:  red;");
+          tdElement1.setAttribute("style", "cursor: pointer;"); 
+          tdElement1.addEventListener('click', removePationet);
+          trElement.appendChild(tdElement1);
+        
+          
+
+
+         tableBody.appendChild(trElement);
+
+           
+        
+
+    }
+
+
+}
+
+let todayCounter = 0 ;
+let gitButton =  document.getElementById("todayButton");
+gitButton.addEventListener('click',TodayAppointment);
+
+// functions to view Today Appointments 
+function TodayAppointment(){
+    
+
+    
+    let gitappontPatient = JSON.parse(localStorage.getItem('patientAppoint'));
+     // currentDat For Today Date 
+        let currentDate = new Date();
+        let dd = String(currentDate.getDate()).padStart(2, '0');
+        let mm = String(currentDate.getMonth() + 1).padStart(2, '0'); //January is 0!
+        let yyyy = currentDate.getFullYear();
+
+        currentDate =yyyy  + '-' + mm + '-' + dd;
+     console.log(currentDate);
+     let x=gitappontPatient[1].appointmentDate;
+     console.log(x)
+
+
+
+     let tableBody = document.querySelector("tbody");
+     ClearTable();
+
+     for (let i = 0 ; i< gitappontPatient.length ;i++)
+    {
+        if (gitappontPatient[i].appointmentDate == currentDate)
+        {
+         let trElement = document.createElement('tr');
+         let tdElement2 = document.createElement('td');
+         tdElement2.textContent=gitappontPatient[i].firstName +" "+gitappontPatient[i].lastName;
+         trElement.appendChild(tdElement2);
+  
+         /* let tdElement3 = document.createElement('td');
+        tdElement3.textContent=;
+         trElement.appendChild(tdElement3);
+ */
+         let tdElement4 = document.createElement('td');
+         tdElement4.textContent=gitappontPatient[i].phone;
+         trElement.appendChild(tdElement4);
+
+         let tdElement5 = document.createElement('td');
+         tdElement5.textContent=gitappontPatient[i].appointmentDate;
+         trElement.appendChild(tdElement5);
+         
+         let tdElement6 = document.createElement('td');
+         tdElement6.textContent=gitappontPatient[i].appointmentTime;
+         trElement.appendChild(tdElement6);
+         
+
+         let tdElement1 = document.createElement('td');
+           tdElement1.textContent='Delete';
+          tdElement1.setAttribute('id', gitappontPatient[i].firstName);
+          tdElement1.setAttribute("style", "color:  red;");
+          tdElement1.setAttribute("style", "cursor: pointer;"); 
+          tdElement1.addEventListener('click', removePationet);
+          trElement.appendChild(tdElement1);
+          
+          tableBody.appendChild(trElement);
+          
+          todayCounter ++;
+           
+        }
+
+    }
+
+    gitButton1.setAttribute("style", "visibility: visible;");
+
 
 }
 
