@@ -85,12 +85,13 @@ footer {
   }
   
 
-  main{
+  .formSection{
       width: 900px;
       margin: auto auto;
+      border-top: 3px solid #163d92;
   }
 
-  main form {
+  .formSection form {
       width:500px;
       display:grid;
       grid-template-columns: 90px 200px 110px;
@@ -102,7 +103,7 @@ footer {
       padding-bottom: 10px;
      padding-top: 10px;
   }
-  main form label{
+  .formSection form label{
       color:#163d92;
       font-size: 20px;
       transition: all ;
@@ -111,7 +112,7 @@ footer {
       font-weight: 700;
     
   }
-  main form label:hover{
+  .formSection form label:hover{
     color:#163d92;
     
   }
@@ -132,35 +133,39 @@ footer {
     transform: translateY(-7px);
   }
   
-  #disease{
+  #diseases{
     border-radius:8px;
     /* border-radius: 50%; */
     border-color: #0b5475;
-    overflow: scroll;
   }
-  datalist{
-    height: 10px;
+  select{
+    border-radius:8px;
+    background-color:#163d92;
+    color:#fff;
+    
+
   }
-  main article h3{
+ 
+  .formSection article h3{
     font-size: 35px;
     color: #163d92;
     margin: 30px auto;
     text-transform: capitalize;
 
   }
-  main article p{
+  .formSection article p{
     font-size: 20px;
     text-indent: 30px;
     margin: 30px auto;
   }
-  .symptoms h4 , .treatment h4{
+  #symptoms h4 , #treatment h4{
     font-size: 30px;
     color: #3a9dca;
     text-transform: capitalize;
     margin: 10px auto;
     
   }
-  .symptoms ul , .treatment ul {
+  #symptoms ul , #treatment ul {
     list-style:inside;
     font-size: 18px;
     margin: 15px auto 20px 15px;

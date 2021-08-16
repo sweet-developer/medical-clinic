@@ -27,73 +27,73 @@ const fluTreatment = ['Be sure to drink large amounts of water, drink useful hot
   'auxiliary medicines such as: paracetamol, Aspirin (for those above 18 years old and dont have allergy from it ) and Ipratropium.'];
 
 // insomnia disease symptoms and treatment
-const insomniaSymptom = ['find it hard to go to sleep',
+const insomniaSymptom = ['find it hard to go to sleep.',
   'wake up several times during the night.',
   'lie awake at night.',
   'wake up early and cannot go back to sleep.',
   'still feel tired after waking up.',
   'find it hard to nap during the day even though you are tired.',
-  'feel tired and irritable during the day'];
-const insomniaTreatment=['Benzodiazepine','Zolpidem'];
+  'feel tired and irritable during the day.'];
+const insomniaTreatment=['Benzodiazepine.','Zolpidem.'];
 
 
 // smallpox disease symptoms and treatment
-const smallpoxSymptom=['a high fever','fatigue','a headache','a backache',
-  'After 2 to 3 days of illness, a flat, red rash appears',
+const smallpoxSymptom=['a high fever.','fatigue.','a headache.','a backache.',
+  'After 2 to 3 days of illness, a flat, red rash appears.',
   'Over the next 2 to 3 weeks, the flat, red spots become firm and dome-shaped and fill with pus.'];
-const smallpoxTreatment=['take the smallpox vaccine and avoid the use of aspirin for children and replace it with some painkillers containing ibuprofen'];
+const smallpoxTreatment=['take the smallpox vaccine and avoid the use of aspirin for children and replace it with some painkillers containing ibuprofen.'];
 
 
 // measles disease symptoms and treatment
 const measlesSymptoms=['a runny or blocked nose.','sneezing.','watery eyes.','swollen eyelids.',
   'sore, red eyes that may be sensitive to light.',
-  'fever, which may reach around 40C',
+  'fever, which may reach around 40C.',
   'small greyish-white spots in the mouth.',
   'aches and pains.'];
-const measlesTreatment=['measles vaccine '];
+const measlesTreatment=['measles vaccine. '];
 
 
 // covid-19 disease symptoms and treatment
-const covidSymptom=['Fever or chills','Cough','Shortness of breath or difficulty breathing',
-  'Fatigue','Muscle or body aches','Headache','New loss of taste or smell',
-  'Sore throat',' Congestion or runny nose','Nausea or vomiting','Diarrhea'];
-const covidTreatment=['Pfizer vaccines','AstraZeneca vaccines','Sinopharm vaccines'];
+const covidSymptom=['Fever or chills.','Cough.','Shortness of breath or difficulty breathing.',
+  'Fatigue.','Muscle or body aches.','Headache.','New loss of taste or smell.',
+  'Sore throat.',' Congestion or runny nose.','Nausea or vomiting.','Diarrhea.'];
+const covidTreatment=['Pfizer vaccines.','AstraZeneca vaccines.','Sinopharm vaccines.'];
 
 // sprin allergy symptoms and treatment
 const springSymptom=['Runny nose.','Watery eyes.','Sneezing.','Coughing.','Itchy eyes and nose.','Dark circles under the eyes.'];
-const springTreatment=['The treatment lies in the removal of dust and dirt, and there are some cases that require the use of some medicines',
+const springTreatment=['The treatment lies in the removal of dust and dirt, and there are some cases that require the use of some medicines.',
   'Antihistamines and you can use it without doctor'+'s prescription because It is intended to relieve the symptoms of allergy attacks.'];
 
 // diarrhea symptoms and treatment
-const diarrheaSymptom=['nausea','abdominal pain','cramping','bloating','dehydration','a fever','bloody stools',
-  'a frequent urge to evacuate your bowels','a large volume of stools'];
-const diarrheaTreatment=['Pepto Bismol','Imodium A - D'];
+const diarrheaSymptom=['nausea.','abdominal pain.','cramping.','bloating.','dehydration.','a fever.','bloody stools.',
+  'a frequent urge to evacuate your bowels.','a large volume of stools.'];
+const diarrheaTreatment=['Pepto Bismol.','Imodium A - D.'];
 
 
 // hookworm symptoms and treatment
-const hookwormSymptom=['Itching','localized rash',
+const hookwormSymptom=['Itching.','localized rash.',
   'A person with a heavy infection may experience abdominal pain, diarrhea, loss of appetite, weight loss, fatigue and anemia.'];
-const hookwormTreatment=['Anthelminthic medications such as albendazole and mebendazole'];
+const hookwormTreatment=['Anthelminthic medications such as albendazole and mebendazole.'];
 
 // leprosy symptoms and treatment
-const leprosySymptom=['Loss of feeling in the arms and legs.','muscle weakness'];
-const leprosyTreatment=['Antibiotics are used first to treat infection such as : Dapsone and Rifampin',
+const leprosySymptom=['Loss of feeling in the arms and legs.','muscle weakness.'];
+const leprosyTreatment=['Antibiotics are used first to treat infection such as : Dapsone and Rifampin.',
   'Nerve damage is irreversible in the long term, but anti-inflammatory drugs (Prednisone) are used to control the pain and damage caused by leprosy.',
   'Thalidomide is sometimes given, which is an effective drug that suppresses the immune system, which helps in the treatment of lepromatous skin nodules, but this drug leads to severe congenital malformations of the fetus, so it is not given to pregnant women.'];
 
 // pertussis symptoms and treatment
-const pertussisSymptom=['Early symptoms can last for 1 to 2 weeks and usually include:Runny nose, Low-grade fever, Mild, occasional cough, Apnea – a pause in breathing (in babies)',
-  'After 1 to 2 weeks symptoms include: rapid coughs followed by a high-pitched “whoop” sound, throwing up during or after coughing fits, Exhaustion after coughing fits'];
-const pertussisTreatment=['Young children/ babys are admitted to hospital for treatment because it is dangerous for them',
+const pertussisSymptom=['Early symptoms can last for 1 to 2 weeks and usually include:Runny nose, Low-grade fever, Mild, occasional cough, Apnea – a pause in breathing (in babies).',
+  'After 1 to 2 weeks symptoms include: rapid coughs followed by a high-pitched “whoop” sound, throwing up during or after coughing fits, Exhaustion after coughing fits.'];
+const pertussisTreatment=['Young children/ babys are admitted to hospital for treatment because it is dangerous for them.',
   'Treating older children and adults at home by Get plenty of rest, Drink plenty of fluids to avoid dehydration, Divide meals into smaller meals to avoid vomiting after coughing, Ensure that the air in the house is cleaned of coughing irritants, Covering the mouth while sneezing and coughing, in addition to washing hands frequently to avoid spreading the infection to others.',
   'you can use the Antibiotics for older childern and adults.'];
 
 //===================================================(variable declaration)===============================
-let datalist=document.getElementById('diseases');
+let select=document.getElementById('diseases');
 let option;
-let mainArticle=document.getElementsByClassName('informationArticle');
-let symptomDiv=document.getElementsByClassName('symptoms');
-let treatmentDiv=document.getElementsByClassName('treatment');
+let mainArticle=document.getElementById('informationArticle');
+let symptomDiv=document.getElementById('symptoms');
+let treatmentDiv=document.getElementById('treatment');
 
 let object=[];
 let totalSymptom=[8,7,6,8,11,6,9,3,2,2];
@@ -111,7 +111,8 @@ function pushName(){
   for(let i=0; i<diseaseName.length;i++){
     option=document.createElement('option');
     option.textContent=diseaseName[i];
-    datalist.appendChild(option);
+    console.log(diseaseName[i]);
+    select.appendChild(option);
   }
 
 }
@@ -122,38 +123,65 @@ for(let i=0; i<diseaseName.length;i++){
 
 //===============================(calling and testing)===================================================================
 pushName();
-//console.log(mainArticle);
-render();
 
-let list=document.getElementById('disease');
-console.log(list.value);
+
+
 //==================================(eventlistener)================================================================
 let button=document.getElementById('button');
-button.addEventListener('submit',eventHandler);
+//console.log(button);
+button.addEventListener('click',eventHandler);
 function eventHandler(event){
+  //console.log(event);
   event.preventDefault();
-  let output=event.targrt.value;
-  console.log(output);
+  var text = select.options[select.selectedIndex].text;
+
+
+  console.log(text);
+  clear();
+  render(text);
+  console.log(object);
+
+
+
+
 }
 
+function clear(){
+
+  while(mainArticle.firstChild)
+    mainArticle.removeChild(mainArticle.firstChild);
+
+  while(symptomDiv.firstChild)
+    symptomDiv.removeChild(symptomDiv.firstChild);
+
+  while(treatmentDiv.firstChild)
+    treatmentDiv.removeChild(treatmentDiv.firstChild);
+}
+
+
 //===========================================(render function to push disease information to the body of page)===========
-function render(){
+function render(text){
 
-  for(let i=0;i<diseaseName.length;i++){
-    let h3Element=document.createElement('h3');
-    h3Element.textContent=object[i].name;
-    document.getElementsByClassName('informationArticle')[0].appendChild(h3Element);
+  for(let i=0; i<diseaseName.length;i++){
 
-    let pElement=document.createElement('p');
-    pElement.textContent=object[i].description;
-    document.getElementsByClassName('informationArticle')[0].appendChild(pElement);
 
-    if(i===0){ // to push to flu disease its symptoms and view it in an un-orderlsit
+    if(i===0 && text === diseaseName[i]){ // to push to flu disease its symptoms and view it in an un-orderlsit
+      console.log(text);
+      let h3Element=document.createElement('h3');
+      h3Element.textContent=object[i].name;
+      mainArticle.appendChild(h3Element);
+      let pElement=document.createElement('p');
+      pElement.textContent=object[i].description;
+      mainArticle.appendChild(pElement);
+
+      mainArticle.appendChild(symptomDiv);
+      mainArticle.appendChild(treatmentDiv);
       let h4Element=document.createElement('h4');
       h4Element.textContent='Symptoms';
-      document.getElementsByClassName('symptoms')[0].appendChild(h4Element);
+      symptomDiv.appendChild(h4Element);
       let ulElement=document.createElement('ul');
-      document.getElementsByClassName('symptoms')[0].appendChild(ulElement);
+      symptomDiv.appendChild(ulElement);
+
       for(let j=0;j<totalSymptom[i];j++){
         object[i].symptoms.push(fluSymptom[j].split('.'));
         let liElement=document.createElement('li');
@@ -163,25 +191,37 @@ function render(){
       }
       let h4Element2=document.createElement('h4');
       h4Element2.textContent='Treatment';
-      document.getElementsByClassName('symptoms')[0].appendChild(h4Element2);
+      treatmentDiv.appendChild(h4Element2);
       let ulElement2=document.createElement('ul');
-      document.getElementsByClassName('symptoms')[0].appendChild(ulElement2);
+      treatmentDiv.appendChild(ulElement2);
       for(let j=0;j<totalTreatment[i];j++){
         object[i].treatment.push(fluTreatment[j].split('.'));
         let liElement=document.createElement('li');
         liElement.textContent=object[i].treatment[j];
         //console.log(object[i].treatment);
-        ulElement.appendChild(liElement);
+        ulElement2.appendChild(liElement);
       }
+      break;
     }
 
 
-    if(i===1){ // to push to insomnia disease its symptoms and its treatment and view it in an un-orderlsit
+
+    if(i===1 && text===diseaseName[i]){ // to push to insomnia disease its symptoms and its treatment and view it in an un-orderlsit
+      console.log(text);
+      let h3Element=document.createElement('h3');
+      h3Element.textContent=object[i].name;
+      mainArticle.appendChild(h3Element);
+      let pElement=document.createElement('p');
+      pElement.textContent=object[i].description;
+      mainArticle.appendChild(pElement);
+
+      mainArticle.appendChild(symptomDiv);
+      mainArticle.appendChild(treatmentDiv);
       let h4Element=document.createElement('h4');
       h4Element.textContent='Symptoms';
-      document.getElementsByClassName('symptoms')[0].appendChild(h4Element);
+      symptomDiv.appendChild(h4Element);
       let ulElement=document.createElement('ul');
-      document.getElementsByClassName('symptoms')[0].appendChild(ulElement);
+      symptomDiv.appendChild(ulElement);
       for(let j=0;j<totalSymptom[i];j++){
         object[i].symptoms.push(insomniaSymptom[j].split('.'));
         let liElement=document.createElement('li');
@@ -191,25 +231,36 @@ function render(){
       }
       let h4Element2=document.createElement('h4');
       h4Element2.textContent='Treatment';
-      document.getElementsByClassName('symptoms')[0].appendChild(h4Element2);
+      treatmentDiv.appendChild(h4Element2);
       let ulElement2=document.createElement('ul');
-      document.getElementsByClassName('symptoms')[0].appendChild(ulElement2);
+      treatmentDiv.appendChild(ulElement2);
       for(let j=0;j<totalTreatment[i];j++){
         object[i].treatment.push(insomniaTreatment[j].split('.'));
         let liElement=document.createElement('li');
         liElement.textContent=object[i].treatment[j];
         //console.log(object[i].treatment);
-        ulElement.appendChild(liElement);
+        ulElement2.appendChild(liElement);
       }
+      break;
     }
 
 
-    if(i===2){ // to push to smallpox disease its symptoms and its treatment and view it in an un-orderlsit
+    if(i===2 && text===diseaseName[i]){ // to push to smallpox disease its symptoms and its treatment and view it in an un-orderlsit
+      console.log(text);
+      let h3Element=document.createElement('h3');
+      h3Element.textContent=object[i].name;
+      mainArticle.appendChild(h3Element);
+      let pElement=document.createElement('p');
+      pElement.textContent=object[i].description;
+      mainArticle.appendChild(pElement);
+
+      mainArticle.appendChild(symptomDiv);
+      mainArticle.appendChild(treatmentDiv);
       let h4Element=document.createElement('h4');
       h4Element.textContent='Symptoms';
-      document.getElementsByClassName('symptoms')[0].appendChild(h4Element);
+      symptomDiv.appendChild(h4Element);
       let ulElement=document.createElement('ul');
-      document.getElementsByClassName('symptoms')[0].appendChild(ulElement);
+      symptomDiv.appendChild(ulElement);
       for(let j=0;j<totalSymptom[i];j++){
         object[i].symptoms.push(smallpoxSymptom[j].split('.'));
         let liElement=document.createElement('li');
@@ -219,24 +270,35 @@ function render(){
       }
       let h4Element2=document.createElement('h4');
       h4Element2.textContent='Treatment';
-      document.getElementsByClassName('symptoms')[0].appendChild(h4Element2);
+      treatmentDiv.appendChild(h4Element2);
       let ulElement2=document.createElement('ul');
-      document.getElementsByClassName('symptoms')[0].appendChild(ulElement2);
+      treatmentDiv.appendChild(ulElement2);
       for(let j=0;j<totalTreatment[i];j++){
         object[i].treatment.push(smallpoxTreatment[j].split('.'));
         let liElement=document.createElement('li');
         liElement.textContent=object[i].treatment[j];
         //console.log(object[i].treatment);
-        ulElement.appendChild(liElement);
+        ulElement2.appendChild(liElement);
       }
+      break;
     }
 
-    if(i===3){ // to push to measles disease its symptoms and its treatment and view it in an un-orderlsit
+    if(i===3 && text===diseaseName[i]){ // to push to measles disease its symptoms and its treatment and view it in an un-orderlsit
+      console.log(text);
+      let h3Element=document.createElement('h3');
+      h3Element.textContent=object[i].name;
+      mainArticle.appendChild(h3Element);
+      let pElement=document.createElement('p');
+      pElement.textContent=object[i].description;
+      mainArticle.appendChild(pElement);
+
+      mainArticle.appendChild(symptomDiv);
+      mainArticle.appendChild(treatmentDiv);
       let h4Element=document.createElement('h4');
       h4Element.textContent='Symptoms';
-      document.getElementsByClassName('symptoms')[0].appendChild(h4Element);
+      symptomDiv.appendChild(h4Element);
       let ulElement=document.createElement('ul');
-      document.getElementsByClassName('symptoms')[0].appendChild(ulElement);
+      symptomDiv.appendChild(ulElement);
       for(let j=0;j<totalSymptom[i];j++){
         object[i].symptoms.push(measlesSymptoms[j].split('.'));
         let liElement=document.createElement('li');
@@ -246,25 +308,36 @@ function render(){
       }
       let h4Element2=document.createElement('h4');
       h4Element2.textContent='Treatment';
-      document.getElementsByClassName('symptoms')[0].appendChild(h4Element2);
+      treatmentDiv.appendChild(h4Element2);
       let ulElement2=document.createElement('ul');
-      document.getElementsByClassName('symptoms')[0].appendChild(ulElement2);
+      treatmentDiv.appendChild(ulElement2);
       for(let j=0;j<totalTreatment[i];j++){
         object[i].treatment.push(measlesTreatment[j].split('.'));
         let liElement=document.createElement('li');
         liElement.textContent=object[i].treatment[j];
         //console.log(object[i].treatment);
-        ulElement.appendChild(liElement);
+        ulElement2.appendChild(liElement);
       }
+      break;
     }
 
 
-    if(i===4){ // to push to covid-19 disease its symptoms and its treatment and view it in an un-orderlsit
+    if(i===4 && text===diseaseName[i]){ // to push to covid-19 disease its symptoms and its treatment and view it in an un-orderlsit
+      console.log(text);
+      let h3Element=document.createElement('h3');
+      h3Element.textContent=object[i].name;
+      mainArticle.appendChild(h3Element);
+      let pElement=document.createElement('p');
+      pElement.textContent=object[i].description;
+      mainArticle.appendChild(pElement);
+
+      mainArticle.appendChild(symptomDiv);
+      mainArticle.appendChild(treatmentDiv);
       let h4Element=document.createElement('h4');
       h4Element.textContent='Symptoms';
-      document.getElementsByClassName('symptoms')[0].appendChild(h4Element);
+      symptomDiv.appendChild(h4Element);
       let ulElement=document.createElement('ul');
-      document.getElementsByClassName('symptoms')[0].appendChild(ulElement);
+      symptomDiv.appendChild(ulElement);
       for(let j=0;j<totalSymptom[i];j++){
         object[i].symptoms.push(covidSymptom[j].split('.'));
         let liElement=document.createElement('li');
@@ -274,25 +347,36 @@ function render(){
       }
       let h4Element2=document.createElement('h4');
       h4Element2.textContent='Treatment';
-      document.getElementsByClassName('symptoms')[0].appendChild(h4Element2);
+      treatmentDiv.appendChild(h4Element2);
       let ulElement2=document.createElement('ul');
-      document.getElementsByClassName('symptoms')[0].appendChild(ulElement2);
+      treatmentDiv.appendChild(ulElement2);
       for(let j=0;j<totalTreatment[i];j++){
         object[i].treatment.push(covidTreatment[j].split('.'));
         let liElement=document.createElement('li');
         liElement.textContent=object[i].treatment[j];
         //console.log(object[i].treatment);
-        ulElement.appendChild(liElement);
+        ulElement2.appendChild(liElement);
       }
+      break;
     }
 
 
-    if(i===5){ // to push to spring allergy its symptoms and its treatment and view it in an un-orderlsit
+    if(i===5 && text===diseaseName[i]){ // to push to spring allergy its symptoms and its treatment and view it in an un-orderlsit
+      console.log(text);
+      let h3Element=document.createElement('h3');
+      h3Element.textContent=object[i].name;
+      mainArticle.appendChild(h3Element);
+      let pElement=document.createElement('p');
+      pElement.textContent=object[i].description;
+      mainArticle.appendChild(pElement);
+
+      mainArticle.appendChild(symptomDiv);
+      mainArticle.appendChild(treatmentDiv);
       let h4Element=document.createElement('h4');
       h4Element.textContent='Symptoms';
-      document.getElementsByClassName('symptoms')[0].appendChild(h4Element);
+      symptomDiv.appendChild(h4Element);
       let ulElement=document.createElement('ul');
-      document.getElementsByClassName('symptoms')[0].appendChild(ulElement);
+      symptomDiv.appendChild(ulElement);
       for(let j=0;j<totalSymptom[i];j++){
         object[i].symptoms.push(springSymptom[j].split('.'));
         let liElement=document.createElement('li');
@@ -302,24 +386,35 @@ function render(){
       }
       let h4Element2=document.createElement('h4');
       h4Element2.textContent='Treatment';
-      document.getElementsByClassName('symptoms')[0].appendChild(h4Element2);
+      treatmentDiv.appendChild(h4Element2);
       let ulElement2=document.createElement('ul');
-      document.getElementsByClassName('symptoms')[0].appendChild(ulElement2);
+      treatmentDiv.appendChild(ulElement2);
       for(let j=0;j<totalTreatment[i];j++){
         object[i].treatment.push(springTreatment[j].split('.'));
         let liElement=document.createElement('li');
         liElement.textContent=object[i].treatment[j];
         //console.log(object[i].treatment);
-        ulElement.appendChild(liElement);
+        ulElement2.appendChild(liElement);
       }
+      break;
     }
 
-    if(i===6){ // to push to diarrhea disease its symptoms and its treatment and view it in an un-orderlsit
+    if(i===6 && text===diseaseName[i]){ // to push to diarrhea disease its symptoms and its treatment and view it in an un-orderlsit
+      console.log(text);
+      let h3Element=document.createElement('h3');
+      h3Element.textContent=object[i].name;
+      mainArticle.appendChild(h3Element);
+      let pElement=document.createElement('p');
+      pElement.textContent=object[i].description;
+      mainArticle.appendChild(pElement);
+
+      mainArticle.appendChild(symptomDiv);
+      mainArticle.appendChild(treatmentDiv);
       let h4Element=document.createElement('h4');
       h4Element.textContent='Symptoms';
-      document.getElementsByClassName('symptoms')[0].appendChild(h4Element);
+      symptomDiv.appendChild(h4Element);
       let ulElement=document.createElement('ul');
-      document.getElementsByClassName('symptoms')[0].appendChild(ulElement);
+      symptomDiv.appendChild(ulElement);
       for(let j=0;j<totalSymptom[i];j++){
         object[i].symptoms.push(diarrheaSymptom[j].split('.'));
         let liElement=document.createElement('li');
@@ -329,24 +424,35 @@ function render(){
       }
       let h4Element2=document.createElement('h4');
       h4Element2.textContent='Treatment';
-      document.getElementsByClassName('symptoms')[0].appendChild(h4Element2);
+      treatmentDiv.appendChild(h4Element2);
       let ulElement2=document.createElement('ul');
-      document.getElementsByClassName('symptoms')[0].appendChild(ulElement2);
+      treatmentDiv.appendChild(ulElement2);
       for(let j=0;j<totalTreatment[i];j++){
         object[i].treatment.push(diarrheaTreatment[j].split('.'));
         let liElement=document.createElement('li');
         liElement.textContent=object[i].treatment[j];
         //console.log(object[i].treatment);
-        ulElement.appendChild(liElement);
+        ulElement2.appendChild(liElement);
       }
+      break;
     }
 
-    if(i===7){ // to push to hookworm disease its symptoms and its treatment and view it in an un-orderlsit
+    if(i===7 && text===diseaseName[i]){ // to push to hookworm disease its symptoms and its treatment and view it in an un-orderlsit
+      console.log(text);
+      let h3Element=document.createElement('h3');
+      h3Element.textContent=object[i].name;
+      mainArticle.appendChild(h3Element);
+      let pElement=document.createElement('p');
+      pElement.textContent=object[i].description;
+      mainArticle.appendChild(pElement);
+
+      mainArticle.appendChild(symptomDiv);
+      mainArticle.appendChild(treatmentDiv);
       let h4Element=document.createElement('h4');
       h4Element.textContent='Symptoms';
-      document.getElementsByClassName('symptoms')[0].appendChild(h4Element);
+      symptomDiv.appendChild(h4Element);
       let ulElement=document.createElement('ul');
-      document.getElementsByClassName('symptoms')[0].appendChild(ulElement);
+      symptomDiv.appendChild(ulElement);
       for(let j=0;j<totalSymptom[i];j++){
         object[i].symptoms.push(hookwormSymptom[j].split('.'));
         let liElement=document.createElement('li');
@@ -356,24 +462,35 @@ function render(){
       }
       let h4Element2=document.createElement('h4');
       h4Element2.textContent='Treatment';
-      document.getElementsByClassName('symptoms')[0].appendChild(h4Element2);
+      treatmentDiv.appendChild(h4Element2);
       let ulElement2=document.createElement('ul');
-      document.getElementsByClassName('symptoms')[0].appendChild(ulElement2);
+      treatmentDiv.appendChild(ulElement2);
       for(let j=0;j<totalTreatment[i];j++){
         object[i].treatment.push(hookwormTreatment[j].split('.'));
         let liElement=document.createElement('li');
         liElement.textContent=object[i].treatment[j];
         //console.log(object[i].treatment);
-        ulElement.appendChild(liElement);
+        ulElement2.appendChild(liElement);
       }
+      break;
     }
 
-    if(i===8){ // to push to leprosy disease its symptoms and its treatment and view it in an un-orderlsit
+    if(i===8 && text===diseaseName[i]){ // to push to leprosy disease its symptoms and its treatment and view it in an un-orderlsit
+      console.log(text);
+      let h3Element=document.createElement('h3');
+      h3Element.textContent=object[i].name;
+      mainArticle.appendChild(h3Element);
+      let pElement=document.createElement('p');
+      pElement.textContent=object[i].description;
+      mainArticle.appendChild(pElement);
+
+      mainArticle.appendChild(symptomDiv);
+      mainArticle.appendChild(treatmentDiv);
       let h4Element=document.createElement('h4');
       h4Element.textContent='Symptoms';
-      document.getElementsByClassName('symptoms')[0].appendChild(h4Element);
+      symptomDiv.appendChild(h4Element);
       let ulElement=document.createElement('ul');
-      document.getElementsByClassName('symptoms')[0].appendChild(ulElement);
+      symptomDiv.appendChild(ulElement);
       for(let j=0;j<totalSymptom[i];j++){
         object[i].symptoms.push(leprosySymptom[j].split('.'));
         let liElement=document.createElement('li');
@@ -383,24 +500,35 @@ function render(){
       }
       let h4Element2=document.createElement('h4');
       h4Element2.textContent='Treatment';
-      document.getElementsByClassName('symptoms')[0].appendChild(h4Element2);
+      treatmentDiv.appendChild(h4Element2);
       let ulElement2=document.createElement('ul');
-      document.getElementsByClassName('symptoms')[0].appendChild(ulElement2);
+      treatmentDiv.appendChild(ulElement2);
       for(let j=0;j<totalTreatment[i];j++){
         object[i].treatment.push(leprosyTreatment[j].split('.'));
         let liElement=document.createElement('li');
         liElement.textContent=object[i].treatment[j];
         //console.log(object[i].treatment);
-        ulElement.appendChild(liElement);
+        ulElement2.appendChild(liElement);
       }
+      break;
     }
 
-    if(i===9){ // to push to leprosy disease its symptoms and its treatment and view it in an un-orderlsit
+    if(i===9 && text===diseaseName[i]) { // to push to leprosy disease its symptoms and its treatment and view it in an un-orderlsit
+      console.log(text);
+      let h3Element=document.createElement('h3');
+      h3Element.textContent=object[i].name;
+      mainArticle.appendChild(h3Element);
+      let pElement=document.createElement('p');
+      pElement.textContent=object[i].description;
+      mainArticle.appendChild(pElement);
+
+      mainArticle.appendChild(symptomDiv);
+      mainArticle.appendChild(treatmentDiv);
       let h4Element=document.createElement('h4');
       h4Element.textContent='Symptoms';
-      document.getElementsByClassName('symptoms')[0].appendChild(h4Element);
+      symptomDiv.appendChild(h4Element);
       let ulElement=document.createElement('ul');
-      document.getElementsByClassName('symptoms')[0].appendChild(ulElement);
+      symptomDiv.appendChild(ulElement);
       for(let j=0;j<totalSymptom[i];j++){
         object[i].symptoms.push(pertussisSymptom[j].split('.'));
         let liElement=document.createElement('li');
@@ -410,23 +538,21 @@ function render(){
       }
       let h4Element2=document.createElement('h4');
       h4Element2.textContent='Treatment';
-      document.getElementsByClassName('symptoms')[0].appendChild(h4Element2);
+      treatmentDiv.appendChild(h4Element2);
       let ulElement2=document.createElement('ul');
-      document.getElementsByClassName('symptoms')[0].appendChild(ulElement2);
+      treatmentDiv.appendChild(ulElement2);
       for(let j=0;j<totalTreatment[i];j++){
         object[i].treatment.push(pertussisTreatment[j].split('.'));
         let liElement=document.createElement('li');
         liElement.textContent=object[i].treatment[j];
         //console.log(object[i].treatment);
-        ulElement.appendChild(liElement);
+        ulElement2.appendChild(liElement);
       }
+      break;
     }
-
-
-
-
   }
 }
+
 
 
 

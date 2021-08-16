@@ -3,31 +3,35 @@
 
 <head>
   <title>Messages All</title>
-  <link rel="stylesheet" href="css/reset.css" />
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="./css/contact.css">
+  <link rel="stylesheet" href="./css/style.css">
+<title>Show Messages</title>
 </head>
 
 <body>
 
-  <header>
-    <h1>Messages All</h1>
-    <nav>
-      <ul>
-        <li><a href="contact.html">Contact Us</a></li>
-        <li><a href="showmsg.html">Show Messages</a><span id="itemCount"></span></li>
-        <li>
-          <input type="text" id="search">
-          <button id="show_result">Search Of Message</button>
-        </li>
-      </ul>
+  <header id='header'>
+    <h1><span> Midical </span>Clinic</h1>
+    <nav class="navbar">
+      <a href="index.html">home</a>
+      <a href="diseases.html">diseases</a>
+      <a href="hospitals.html">hospitals</a>
+      <a href="Appointments.html">Appointments</a>
+      <a href="doctors.html">doctors</a>
+      <a href="contact.html">contact US</a>
+      <a class='active' href="login.html">Messages</a>
     </nav>
+
   </header>
 
   <main>
 
+    <li class="search">
+      <input type="text" id="search1">
+      <button id="show_result">Search Of Message</button>
+    </li>
 
-
-    <section class="deck col-1">
+    <section class="">
       <div id="cart-container" class="card">
         <table id="form">
           <thead>
@@ -35,7 +39,9 @@
               <th>Delete</th>
               <th>Name</th>
               <th>Email</th>
+              <th>Location</th>
               <th>Phone</th>
+              <th>History</th>
               <th>Reason</th>
               <th>Message</th>
 
@@ -49,9 +55,19 @@
 
     </section>
   </main>
-  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.0/dist/chart.min.js"></script>
+  <footer>
+    <p>&copy; Copyright. All rights reserved</p>
+    <div>
+        <ul>
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-twitter-square"></i>
+            <i class="fab fa-google-plus-square"></i>
+            <i class="fab fa-instagram-square"></i>
+        </ul>
+        <p></p>
+    </div>
+</footer>
   <script src='js1/app.js'></script>
   <script src='js1/cart.js'></script>
 </body>
-
 </html>
