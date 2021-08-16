@@ -6,6 +6,7 @@ function PaitentAppointment(patients=[]){
     this.patients = patients;
 }
 
+
 PaitentAppointment.prototype.addPatientApoint  = function(firstName ,lastName , services , phone ,appointmentDate ,appointmentTime ,description){
 
     let newPatient = new Patient(firstName ,lastName , services , phone ,appointmentDate ,appointmentTime ,description);
