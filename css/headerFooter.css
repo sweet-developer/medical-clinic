@@ -1,3 +1,6 @@
+:root {
+  --color: #3a9dca;
+}
 
 header {
     display: flex;
@@ -15,7 +18,7 @@ header {
     color: #777;
   }
   header h1 span {
-    color: #3a9dca;
+    color: var(--color);
   }
   
   header a {
@@ -35,19 +38,19 @@ header {
   
     padding: 10px;
     font-weight: bold;
-    border-bottom: 2px solid #3a9dca;
+    border-bottom: 2px solid var(--color);
     color: #3a9dca;
   }
   
   .active {
     font-weight: bold;
-    border-bottom: 2px solid #3a9dca;
+    border-bottom: 2px solid var(--color);
     color: #3a9dca;
   }
 footer {
     display: flex;
     justify-content: space-between;
-    background-color: #3a9dca;
+    background-color: var(--color);
     padding: 15px;
     align-items: center;
     margin: 0;
