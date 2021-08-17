@@ -20,3 +20,5 @@ animateValue("strong1",0 ,9, 1000);
 animateValue("strong2",0 ,1500, 1000);
 animateValue("strong3",0 ,5, 1000);
 animateValue("strong4",0 ,30, 1000);
+
+

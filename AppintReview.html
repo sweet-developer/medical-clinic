@@ -7,62 +7,123 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/headerFooter.css">
     <link rel="stylesheet" href="./css/appintmentReview.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-  <header id='header'>
-    <h1><span> Midical </span>Clinic</h1>
-    <nav class="navbar">
-        <a class ='active' href="index.html">home</a>
-        <a  href="diseases.html">diseases</a>
-        <a href="hospitals.html">hospitals</a>
-        <a href="Appointments.html">Appointments</a>
-        <a href="doctors.html">doctors</a>
-        <a href="contact-US.html">contact US</a>
-    </nav>
-
-</header>
+  <div id='container' class="container">
+    <header id='header'>
+      <h1><span> Midical </span>Clinic</h1>
+      <nav class="navbar">
+          <a  href="index.html">home</a>
+          <a  href="diseases.html">diseases</a>
+          <a href="hospitals.html">hospitals</a>
+          <a class ='active' href="Appointments.html">Appointments</a>
+          <a href="doctors.html">doctors</a>
+          <a href="about-as.html">About US</a>
+         
+      </nav>
+         
+  </header>
     <main>
+      
         <div class="container">
             <div class="container-col">
+              <section class="Section1">
+                <a href="./Appointments.html" id="ankertag">Make Apointment</a>
+              </section>
                 <div id="view1"></div>
                 
                 
                 <div id="view2">
+                  
+                  <div id="data2">
+                    <section>
+        
+                      <h1 style="color:white">ApointmentS</h1>
+                      <div class="tbl-header">
+                        <table cellpadding="0" cellspacing="0" border="0">
+                          <thead>
+                            <tr>
+        
+                              <th>Pationt Name</th>
+                              <th>Phone</th>
+                              <th>Date</th>
+                              <th>Time</th>
+                              <th><button id="todayButton" class="Today-button">Today</button>
+                                <button id="allButton" class="Today-button">AllApointments</button>
+                              </th>
+        
+                            </tr>
+                          </thead>
+                        </table>
+                      </div>
+                      <div class="tbl-content">
+                        <table cellpadding="0" cellspacing="0" border="0">
+                          <tbody>
+        
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                  <div id="data1">
+                    <div class="data_graph">
+                      <svg>
+                        <circle cx="70" cy="70" r="70"></circle>
+                        <circle cx="70" cy="70" r="70"></circle>
+                      </svg>
+                      <div class="number">
+                        <h2>1500</h2>
+                      </div>
+                      <div class="text">
+                        Patient till tody
+                        <strong>
+                         
+                        </strong>
+        
+                      </div>
+                    </div>
+                    <div class="data_graph"><svg>
+                        <circle cx="70" cy="70" r="70"></circle>
+                        <circle cx="70" cy="70" r="70"></circle>
+                      </svg>
+                      <div class="number">
+                        <h2>70</h2>
+                      </div>
+                      <div class="text">
+                        Today Patient
+                        <strong>
+                         
+                        </strong>
+                        <section id="DateT">
+                          
+                        </section>
+                      </div>
+                    </div>
                     
-                    <div id="data2">
-                        <section>
-                       
-                        <h1>ApointmentS</h1>
-                        <div class="tbl-header">
-                          <table cellpadding="0" cellspacing="0" border="0">
-                            <thead>
-                              <tr>
-                                  <th></th>
-                                <th>Pationt Name</th>
-                                <th>Phone</th>
-                                <th>Date</th>
-                                <th>Time</th>
-                                
-                              </tr>
-                            </thead>
-                          </table>
-                        </div>
-                        <div class="tbl-content">
-                          <table cellpadding="0" cellspacing="0" border="0">
-                            <tbody>
-                              
-                            </tbody>
-                          </table>
-                        </div>
-                      </section>
-            </div>
-            <div id="data1">
-              <div class="data_graph"></div>
-              <div class="data_graph"></div>
-                <div class="data_graph"></div>
-                <div class="data_graph"></div>
-            </div>
+                    <div class="data_graph"><svg>
+                        <circle cx="70" cy="70" r="70"></circle>
+                        <circle cx="70" cy="70" r="70"></circle>
+                      </svg>
+                      <div class="number">
+                        <h2>85</h2>
+                      </div>
+                      <div class="text">
+                        Appoinments
+                        <strong>
+                          
+                        </strong>
+                        <section id="DateT1">
+                         
+                        </section>
+                      </div>
+                    </div>
+                  </div>
+                    
+                    
         </div>
+        
 
     </main>
     <footer>
@@ -78,9 +139,10 @@
         </div>
     </footer>
 
-     
+
 <script src="./js/AppintmentApp.js"></script>
 <script src="./js/AppoinReview.js"></script>
+</div>
     
 </body>
 </html>

@@ -11,65 +11,142 @@ body{
 }
 
 .container{
-    width: 100%;
+    
     height:918px;
    
 }
 
 .container-col{
-  display: grid;
-    grid-template-columns: 1fr 3fr;
+  margin-top: 50px;
    
 }
-#view1{
-  background: whitesmoke;
-    box-shadow: 0 2px 3px 0 darkgrey;
-    height: 690px;
-    
-    margin-top: 74px;
+.container-col .Section1{
+
+  background-image: url('/css/miroshn.jpg');
+  width: 100%;
+    height: 100px;
+
 }
+
+#view2{
+margin-top: -73px;  
+}
+
+
 
 
 .tbl-header{
     background: -webkit-linear-gradient(left, #e7eeeb, #dcdddd);
-    background: linear-gradient(to right, #818b87, #a9b6b8);
+    background: linear-gradient(to right, var(--color), var(--color));
 
     
 }
 .tbl-content{
   background: -webkit-linear-gradient(left, #e7eeeb, #dcdddd);
-  background: linear-gradient(to right, #818b87, #a9b6b8);
+  background: linear-gradient(to right, var(--color), var(--color));
 }
 #data1{
   
-  display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap: 100px;
-    margin-top: 60px;
-    margin-left: 57px;
-    margin-left: 150px;
+  position: relative;
+  gap: 223px;
+  display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 #data1 .data_graph{
-  background: whitesmoke;
-  box-shadow: 0 2px 3px 0 darkgrey;
-  width: 230px;
-    height: 241px;
-    margin-left: -109px;
-    margin-top: -33px;
+  position: relative;
+    background: whitesmoke;
+    box-shadow: 0 2px 3px 0 darkgrey;
+    width:  250px;
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    
 }
 
-#data1 div{
+.data_graph svg{
+  
+  margin-left: 47px;
+  
+
+}
+.data_graph .number
+{
+  
+  position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.data_graph .text{
+  position: absolute;
+  bottom: 0;
+  margin: 0px;
+
+}
+
+/* #data1 div{
   background-color: rgba(0,0,0,0.3);
     width: 100px;
     height: 100px;
 
 
-}
+} */
 #data2{
   
   
 }
+
+.data_graph svg circle{
+  width: 150px;
+  height: 150px;
+  fill: none;
+  stroke-width: 10;
+  stroke:turquoise ;
+  transform: translate(5px,5px);
+   stroke-dasharray:440;
+   stroke-dashoffset: 440;
+  
+  }
+  .data_graph svg circle:nth-child(1){
+    stroke-dashoffset: 0;
+    stroke: rgb(235, 231, 231);
+  
+  }
+  .data_graph:first-child svg circle:nth-child(2)
+  {
+    stroke-dashoffset: calc( 440 - (440 * 89) / 100);
+    stroke: var(--color);
+  }
+
+  .data_graph:nth-child(2) svg circle:nth-child(2)
+  {
+    stroke-dashoffset: calc( 440 - (440 * 15) / 100);
+    stroke: var(--color);
+  }
+  .data_graph:nth-child(3) svg circle:nth-child(2)
+  {
+    stroke-dashoffset: calc( 440 - (440 * 15) / 100);
+    stroke:var(--color);
+  }
+  
+
+  .data_graph:last-child svg circle:nth-child(2)
+  {
+    stroke-dashoffset: calc( 440 - (440 * 38) / 100);
+    stroke: var(--color);;
+  }
+
+
 
 #data2 section h1{
     font-size: 30px;
@@ -122,30 +199,52 @@ body{
   
   
   
-  .made-with-love {
-    margin-top: 40px;
-    padding: 10px;
-    clear: left;
-    text-align: center;
-    font-size: 10px;
-    font-family: arial;
-    color: #fff;
-  }
-  .made-with-love i {
-    font-style: normal;
-    color: #F50057;
-    font-size: 14px;
-    position: relative;
-    top: 2px;
-  }
-  .made-with-love a {
-    color: #fff;
-    text-decoration: none;
-  }
-  .made-with-love a:hover {
-    text-decoration: underline;
-  }
   
+  #allButton{
+    visibility: hidden;
+    cursor: pointer;
+    background-color: transparent;
+    width: 91px;
+    height: 36px;
+    border-radius: 100px;
+    font-size: 11px;
+    text-align: center;
+    }
+
+    #todayButton{
+      cursor: pointer;
+    background-color: transparent;
+    width: 91px;
+    height: 36px;
+    border-radius: 100px;
+    font-size: 11px;
+    text-align: center;
+    }
+
+    #ankertag{
+
+      border: 1.5px solid black;
+     box-shadow: 0px 3px 14px black;
+     margin-left: 6px;
+      color: #c8c8c8;
+      text-decoration: none;
+      cursor: pointer;
+      background-color: transparent;
+      border-radius: 100px;
+      text-align: center;
+      float: left;
+      margin-top: 40px;
+      width: 125px;
+      height: 45px;
+   
+      font-size: 19px;
+      text-align: center
+
+    
+    }
+
+
+
   
   
   
