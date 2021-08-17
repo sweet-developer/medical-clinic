@@ -31,6 +31,8 @@ body {
 
 /*satrt header  */
 header {
+  border-bottom: 3px solid var(--color);
+
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -123,8 +125,8 @@ main .doctor p{
 
 footer {
   display: flex;
-  justify-content: space-between;
-  background-color: var(--color);
+  justify-content: center;
+    background-color: var(--color);
   padding: 15px;
   align-items: center;
   margin: 0;
@@ -133,7 +135,8 @@ footer {
 
 footer p {
   color: #fff;
-
+  padding-right: 10px;
+  margin-right: 10px;
 }
 
 footer i {

@@ -4,12 +4,26 @@ justify-content: space-around;
 
 }
 .team{
-    margin-top: 20px;
-    margin-bottom: 20px;
+    background-color: var(--color);
+padding: 20px;
+margin: 20px;
+
+  border-radius: 20px 0px;
+  box-shadow: 1px 1px 10px var(--color);
     width: 30%;
-    color: var(--color);
+    color: whitesmoke;
     text-align: center;
     /* border: 2px solid var(--color); */
+}
+.team i {
+    margin: 10px;
+    font-size: 25px;
+    transition: 0.6s;
+    cursor: pointer;
+    
+}
+.team i:hover{
+    font-size: 30px;
 }
 .team img{
     width: 150px;
@@ -19,7 +33,20 @@ position: relative;
 border-radius: 50%;
 border: 2px solid var(--color);
 box-shadow: 3px 3px 7px var(--color);
+margin-bottom: 20px;
 }
 .maindev{
     min-height: 100%;
+}
+.team h3{
+    font-size: 20px ;
+    font-family : sans-serif;
+    font-weight: bold;
+margin-bottom: 20px;
+}
+.team p{
+
+    line-height: 1.5;
+    letter-spacing: 1px;
+
 }

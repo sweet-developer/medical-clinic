@@ -1,7 +1,7 @@
 //start craete navbar effect
 
 // let enterNAme = prompt('Hello friend please type your name? ');
-Swal.fire(`Hello welcome to our website.`)
+
 
 // alert(`Hello ${enterNAme} welcome to our website.`)
 
