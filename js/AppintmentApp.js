@@ -10,6 +10,7 @@ PaitentAppointment.prototype.addPatientApoint  = function(firstName ,lastName , 
 
     let newPatient = new Patient(firstName ,lastName , services , phone ,appointmentDate ,appointmentTime ,description);
     this.patients.push(newPatient);
+    
 }
 
 PaitentAppointment.prototype.saveTolocalStorage = function(){
@@ -80,6 +81,16 @@ function MakeApointment(e)
    
    patientAppintmetn1.saveTolocalStorage();
 
+
+}
+
+
+
+localStorage.colorOption;
+//check if local storage have value or not 
+if (localStorage.colorOption !== null) {
+  //set color web site from local storage 
+  document.documentElement.style.setProperty('--color', localStorage.colorOption);
 
 }
 
