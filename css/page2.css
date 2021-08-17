@@ -1,96 +1,22 @@
-body {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    margin: 0 auto;
-  }
+/* add to the header border */
+   header{
+    border-bottom: 3px solid gray;
+   }
   /*satrt container */
   .container {
     width: 1200px;
     margin: 0 auto;
-  
     padding: 0;
     font-family: sans-serif;
   }
-  
-  /*satrt header  */
-  header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #fff;
-    width: 100%;
-    margin: 0%;
-    height: 100px;
-  }
-  
-  header h1 {
-    margin: 0;
-    padding: 15px;
-    color: #777;
-    font-size: 25px;
-  }
-  header h1 span {
-    color: #3a9dca;
-    font-size: 40px;
-  }
-  
-  header a {
-    margin: 10px;
-    color: #777;
-    text-decoration: none;
-    transition: 0.6s;
-    text-transform: capitalize;
-  }
-  
-  header a:last-child {
-    margin-right: 20px;
-  }
-  
-  header a:hover {
-    transform: scaleX(1.5);
-  
-    padding: 10px;
-    font-weight: bold;
-    border-bottom: 2px solid #3a9dca;
-    color: #3a9dca;
-  }
-  .active {
-    font-weight: bold;
-    border-bottom: 2px solid #3a9dca;
-    color: #3a9dca;
-  }  
-footer {
-    display: flex;
-    justify-content: space-between;
-    background-color: #3a9dca;
-    padding: 15px;
-    align-items: center;
-    margin: 100px auto auto auto;
-  }
-  
-  footer p {
-    color: #fff;
-    
-  }
-  
-  footer i {
-    color: #fff;
-    font-size: 25px;
-    transition: 0.5s;
-  }
-  
-  footer i:hover {
-    font-size: 35px;
-  }
-  
-
+  /* main section */
   .formSection{
       width: 900px;
       margin: auto auto;
-      border-top: 3px solid #163d92;
+      max-height: 100%;
+      min-height: 511px;
   }
-
+  /* form in main section */
   .formSection form {
       width:500px;
       display:grid;
@@ -103,8 +29,9 @@ footer {
       padding-bottom: 10px;
      padding-top: 10px;
   }
+  /* label in main section */
   .formSection form label{
-      color:#163d92;
+      color:#788bb4;
       font-size: 20px;
       transition: all ;
       padding:10px 10px;
@@ -112,10 +39,7 @@ footer {
       font-weight: 700;
     
   }
-  .formSection form label:hover{
-    color:#163d92;
-    
-  }
+  /* button */
   button{
       margin-left: 20px;
       color:#0b5475;
@@ -126,45 +50,46 @@ footer {
       transition: all 0.3s ease 0s;
       cursor: pointer;
   }
+  /* action hover for button */
   button:hover {
-    background-color:#163d92;
+    background-color:#788bb4;
     box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
     color: #fff;
     transform: translateY(-7px);
   }
-  
+  /* list input */
   #diseases{
     border-radius:8px;
     /* border-radius: 50%; */
     border-color: #0b5475;
   }
+  /* list content */
   select{
     border-radius:8px;
-    background-color:#163d92;
-    color:#fff;
-    
-
+    background-color:#bdcef1;
+    color:#2a4581;
   }
- 
+ /* disease name */
   .formSection article h3{
     font-size: 35px;
-    color: #163d92;
+    color: #1d47a0;
     margin: 30px auto;
     text-transform: capitalize;
-
   }
+  /* description */
   .formSection article p{
     font-size: 20px;
     text-indent: 30px;
     margin: 30px auto;
   }
+  /* symptoms and treatment */
   #symptoms h4 , #treatment h4{
     font-size: 30px;
     color: #3a9dca;
     text-transform: capitalize;
     margin: 10px auto;
-    
   }
+  /* list of symptoms and treatment */
   #symptoms ul , #treatment ul {
     list-style:inside;
     font-size: 18px;
