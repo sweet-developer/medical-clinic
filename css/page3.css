@@ -325,6 +325,10 @@ body {
     border-radius: 50%;
   }
   .button {
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 100px;
+    height: 50px;
     display: inline-block;
     padding: 5px 10px;
     font-size: 14px;
