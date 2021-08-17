@@ -1,5 +1,9 @@
 //start craete navbar effect
 
+let enterNAme = prompt('Hello friend please type your name? ');
+
+alert(`Hello ${enterNAme} welcome to our website.`)
+
 //get buttons array
 let Btns = document.querySelectorAll('.navbar a');
 // loop for each button
@@ -121,8 +125,10 @@ colorList.forEach(function (color) {
 
     //set color on root on all html page element
     document.documentElement.style.setProperty('--color', e.target.dataset.color);
-      //set color on local storage 
-      localStorage.colorOption = e.target.dataset.color;
+
+    //set color on local storage 
+    localStorage.colorOption = e.target.dataset.color;
+
 
   });
 
@@ -133,9 +139,8 @@ colorList.forEach(function (color) {
 localStorage.colorOption;
 //check if local storage have value or not 
 if (localStorage.colorOption !== null) {
-    //set color web site from local storage 
-    document.documentElement.style.setProperty('--color', localStorage.colorOption);
-
+  //set color web site from local storage 
+  document.documentElement.style.setProperty('--color', localStorage.colorOption);
 
 }
 
@@ -147,9 +152,11 @@ let closeBtn = document.getElementById('close');
 learnBtn.onclick = createPopup;
 closeBtn.onclick = closePopup;
 function createPopup() {
-    document.getElementById('popup').classList.add('active')
+  document.getElementById('popup').classList.add('active')
 }
 
 function closePopup() {
-    document.getElementById('popup').classList.remove('active')
+  document.getElementById('popup').classList.remove('active')
 }
+
+

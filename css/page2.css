@@ -1,7 +1,7 @@
 /* add to the header border */
-   header{
+   /* header{
     border-bottom: 3px solid gray;
-   }
+   } */
   /*satrt container */
   .container {
     width: 1200px;
@@ -31,7 +31,7 @@
   }
   /* label in main section */
   .formSection form label{
-      color:#788bb4;
+      color:var(--color);
       font-size: 20px;
       transition: all ;
       padding:10px 10px;
@@ -42,7 +42,7 @@
   /* button */
   button{
       margin-left: 20px;
-      color:#0b5475;
+      color:var(--color);
       font-size: 15px;
       padding: 2px 2px;
       border-radius: 1cm 1cm ;
@@ -52,7 +52,7 @@
   }
   /* action hover for button */
   button:hover {
-    background-color:#788bb4;
+    background-color:var(--color);
     box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
     color: #fff;
     transform: translateY(-7px);
@@ -61,18 +61,18 @@
   #diseases{
     border-radius:8px;
     /* border-radius: 50%; */
-    border-color: #0b5475;
+    border-color: var(--color);
   }
   /* list content */
   select{
     border-radius:8px;
     background-color:#bdcef1;
-    color:#2a4581;
+    color:var(--color);
   }
  /* disease name */
   .formSection article h3{
     font-size: 35px;
-    color: #1d47a0;
+    color: var(--color);
     margin: 30px auto;
     text-transform: capitalize;
   }
@@ -85,7 +85,7 @@
   /* symptoms and treatment */
   #symptoms h4 , #treatment h4{
     font-size: 30px;
-    color: #3a9dca;
+    color: var(--color);
     text-transform: capitalize;
     margin: 10px auto;
   }

@@ -1,0 +1,25 @@
+.about{
+display: flex ;
+justify-content: space-around;
+
+}
+.team{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 30%;
+    color: var(--color);
+    text-align: center;
+    /* border: 2px solid var(--color); */
+}
+.team img{
+    width: 150px;
+height: 150px;
+opacity: 1;
+position: relative;
+border-radius: 50%;
+border: 2px solid var(--color);
+box-shadow: 3px 3px 7px var(--color);
+}
+.maindev{
+    min-height: 100%;
+}

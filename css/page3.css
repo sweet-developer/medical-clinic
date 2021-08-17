@@ -1,7 +1,4 @@
-body {
-    background: #eee;
-    font-family: Roboto, "Helvetica Neue", sans-serif;
-}
+
 
 h2 {
     color: #7c795d;
@@ -48,6 +45,7 @@ h2 {
     margin-right:5%;
     margin-left:5%;
     width: 90%;
+    z-index: 1000;
 }
 
 #output, #out {
@@ -73,148 +71,7 @@ body {
     font-family: sans-serif;
   }
   
-  /*satrt header  */
-  header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #fff;
-    width: 100%;
-    margin: 0%;
-    height: 100px;
-  }
-  
-  header h1 {
-    margin: 0;
-    padding: 15px;
-    color: #777;
-  }
-  header h1 span {
-    color: #3a9dca;
-  }
-  
-  header a {
-    margin: 10px;
-    color: #777;
-    text-decoration: none;
-    transition: 0.6s;
-    text-transform: capitalize;
-  }
-  
-  header a:last-child {
-    margin-right: 20px;
-  }
-  
-  header a:hover {
-    transform: scaleX(1.5);
-  
-    padding: 10px;
-    font-weight: bold;
-    border-bottom: 2px solid #3a9dca;
-    color: #3a9dca;
-  }
-  
-  .active {
-    font-weight: bold;
-    border-bottom: 2px solid #3a9dca;
-    color: #3a9dca;
-  }
-  /*satrt main  */
-  
-  main {
-    position: relative;
-  }
-  main .content {
-    position: absolute;
-    top: 38%;
-    left: 27%;
-    text-align: center;
-  }
-  
-  main .content h2 {
-    text-shadow: 1px 1px 5px #3a9dca;
-    color: #3a9dca;
-  }
-  
-  main .content p {
-    text-shadow: 1px 1px 5px #3a9dca;
-    color: #3a9dca;
-    margin-bottom: 40px;
-  }
-  
-  main .content a {
-    cursor: pointer;
-    color: #3a9dca;
-    border: 2px solid #3a9dca;
-    padding: 10px 20px;
-    transition: 0.5s;
-  }
-  
-  main .content a:hover {
-    background-color: #3a9dca;
-    color: #fff;
-  }
-  
-  main img {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-  }
-  
-  .slider {
-    position: relative;
-  }
-  main .slider i {
-    font-size: 50px;
-    opacity: 0.3;
-    transition: 0.6s;
-  }
-  
-  main .slider i:hover {
-    opacity: 1;
-  }
-  
-  main .slider #left i {
-    position: absolute;
-    top: 50%;
-    left: 50px;
-    cursor: pointer;
-  }
-  
-  main .slider #right i {
-    position: absolute;
-    top: 50%;
-    right: 50px;
-    cursor: pointer;
-  }
-  
-  /*satrt footer */
-  
-  footer {
-    display: flex;
-    justify-content: space-between;
-    background-color: #3a9dca;
-    padding: 15px;
-    align-items: center;
-    /* margin: 0; */
-    margin-top: 200px;
-  }
-  
-  footer p {
-    color: #fff;
-  }
-  
-  footer i {
-    color: #fff;
-    font-size: 25px;
-    transition: 0.5s;
-  }
-  
-  footer i:hover {
-    font-size: 35px;
-  }
-  
-  /*end footer*/
+ 
   .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
@@ -292,7 +149,7 @@ body {
   
   .modal-header {
     padding: 2px 16px;
-    background-color: #3a9dca;
+    background-color: var(--color);
     color: white;
   }
   
@@ -300,7 +157,7 @@ body {
   
   .modal-footer {
     padding: 2px 16px;
-    background-color: #3a9dca;
+    background-color: var(--color);
     color: white;
   }
   .grid{
@@ -308,21 +165,21 @@ body {
     justify-content: space-evenly;
     box-sizing: border-box;
     width: 100%;
-    width: 800px;
-    height: 100px;
     margin-top: 50px;
-    margin-left: 200px;
     background-color: rgb(233, 234, 236);
     font-family: Arial, Helvetica, sans-serif;
     color: gray;
-    /* border: solid #3a9dca 10px; */
-    /* padding: 5px; */
+    padding: 20px;
+    align-items: center;
   }
   .logoHos{
     width: 150px;
-    height: 100px;
+    height: 150px;
     margin-right: 10px;
     border-radius: 50%;
+    opacity: 1;
+    position : relative;
+    
   }
   .button {
     margin-top: 20px;
@@ -337,16 +194,16 @@ body {
     text-decoration: none;
     outline: none;
     color: #fff;
-    background-color: #3a9dca;
+    background-color: var(--color);
     border: none;
     border-radius: 8px;
     box-shadow: 0 4px #999;
   }
   
-  .button:hover {background-color: #3a9dca}
+  .button:hover {background-color: var(--color)}
   
   .button:active {
-    background-color: #3a9dca;
+    background-color: var(--color);
     box-shadow: 0 5px #666;
     transform: translateY(10px);
   }
@@ -401,3 +258,14 @@ body {
     transition:all 300ms ease-in-out;
     transform:translate(-50%,-50%) scale(1);
 }
+.hos{
+  position: relative;
+  opacity: 1;
+  width: 100%;
+  height: 400px;
+  margin: auto;
+}
+.mainh{
+  margin-bottom: 30px;
+}
+
