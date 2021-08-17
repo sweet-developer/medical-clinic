@@ -79,7 +79,7 @@ header a:hover {
 
 main{
  min-height:100% ;
- border-top: 3px solid var(--color);
+ /* border-top: 3px solid var(--color); */
 }
 
 .part-doctor{
@@ -146,4 +146,4 @@ footer i:hover {
   font-size: 35px;
 }
 
-/end footer/
+/* /end footer/ */
