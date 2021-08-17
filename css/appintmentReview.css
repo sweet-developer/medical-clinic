@@ -22,7 +22,7 @@ body{
 }
 .container-col .Section1{
 
-  background-image: url('/css/miroshn.jpg');
+  background-image: url('./miroshn.jpg');
   width: 100%;
     height: 100px;
 
