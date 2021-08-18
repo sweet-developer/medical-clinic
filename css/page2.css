@@ -71,8 +71,12 @@
   }
  /* disease name */
   .formSection article h3{
+    border-radius: 10px 0px;
+
+    padding: 20px;
+    background: var(--color);
     font-size: 35px;
-    color: var(--color);
+    color: white;
     margin: 30px auto;
     text-transform: capitalize;
   }
@@ -81,18 +85,28 @@
     font-size: 20px;
     text-indent: 30px;
     margin: 30px auto;
+    line-height: 1.5;
+    letter-spacing: 1;
   }
   /* symptoms and treatment */
   #symptoms h4 , #treatment h4{
+    border-radius: 10px 0px;
+    padding: 20px;
+    background: var(--color);
     font-size: 30px;
-    color: var(--color);
+    color: white;
     text-transform: capitalize;
     margin: 10px auto;
   }
   /* list of symptoms and treatment */
   #symptoms ul , #treatment ul {
+    line-height: 1.5;
+    letter-spacing: 1;
     list-style:inside;
     font-size: 18px;
     margin: 15px auto 20px 15px;
   }
- 
+  #informationArticle{
+    margin-bottom: 20px;
+
+  }

@@ -150,3 +150,18 @@ footer i:hover {
 }
 
 /* /end footer/ */
+.doctortitles{
+  text-align: center;
+  margin: 20px;
+  color: var(--color);
+}
+.doctortitles h3{
+  
+  font-size: 25px;
+  font-weight: bolder;
+  
+}
+.doctortitles p{
+  margin : 20px;
+  letter-spacing: 1px;
+}
