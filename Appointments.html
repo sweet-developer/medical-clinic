@@ -54,10 +54,10 @@
                     <form action="" id="AppointmentForm" autocomplete="off">
                         <div class="fildContaner">
                             <div class="formFild">
-                                <input type="text" id="firstName" placeholder="First Name" class="iput-text">
+                                <input type="text" id="firstName" placeholder="First Name" class="iput-text" required>
                             </div>
                             <div class="formFild">
-                                <input type="text" id="lastName" placeholder="Last Name" class="iput-text">
+                                <input type="text" id="lastName" placeholder="Last Name" class="iput-text" required>
                             </div>
                         </div>
                         <div class="fildContaner">
@@ -65,20 +65,24 @@
                                 <div class="icon"><span class="ion-ios-arrow-down"></span></div>
                                 <select name="" id="services" class="iput-text">
                                    <option value="">Select Your Services</option>
+                                   <option value=""></option>
+                                   <option value="">Select Your Services</option>
+                                   <option value="">Select Your Services</option>
+                                   <option value="">Select Your Services</option>
                                 </select>
                             </div>
                             <div class="formFild">
-                                <input type="text" id="phone" placeholder="Phone" class="iput-text">
+                                <input type="text" id="phone" placeholder="Phone" class="iput-text" required>
                             </div>
                         </div>
                         <div class="fildContaner">
                             <div class="formFild">
                                 <div class="icon"><span class="ion-md-calendar"></span></div>
-                                <input type="date" id="idDate" placeholder="Date" class="iput-text">
+                                <input type="date" id="idDate" placeholder="Date" class="iput-text" required>
                             </div>
                             <div class="formFild">
                                 <div class="icon"><span class="ion-ios-clock"></span></div>
-                                <input type="time" id="idTime" placeholder="Time" autocomplete="off" class="iput-text">
+                                <input type="time" id="idTime" placeholder="Time" autocomplete="off" class="iput-text" required>
                             </div>
                         </div>
 
@@ -89,7 +93,7 @@
                             </div>
                             <div class="formFild">
 
-                                <input type="submit" value="Appointment" id="buttonID" class="iput-text" onclick="window.location.href='./AppintReview.html'">
+                                <input type="submit" value="Appointment" id="buttonID" class="iput-text" >
 
                             </div>
                         </div>
