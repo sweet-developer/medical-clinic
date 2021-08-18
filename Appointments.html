@@ -1,158 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./css/headerFooter.css">
-    <link rel="stylesheet" href="./css/AppointmentStyle.css">
-    <link rel="stylesheet" href="./css/all.min.css">
-    <link rel="stylesheet" href="./css/style.css">
-   
-</head>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/headerFooter.css" />
+    <link rel="stylesheet" href="./css/AppointmentStyle.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
 
-<body>
-    <div id='container' class="container">
-    <header id='header'>
+  <body>
+    <div id="container" class="container">
+      <header id="header">
         <h1><span> Midical </span>Clinic</h1>
         <nav class="navbar">
-            <a  href="index.html">home</a>
-            <a  href="diseases.html">diseases</a>
-            <a href="hospitals.html">hospitals</a>
-            <a class ='active' href="Appointments.html">Appointments</a>
-            <a href="doctors.html">doctors</a>
-            <a href="about-as.html">About US</a>
-           
+          <a href="index.html">home</a>
+          <a href="diseases.html">diseases</a>
+          <a href="hospitals.html">hospitals</a>
+          <a class="active" href="Appointments.html">Appointments</a>
+          <a href="doctors.html">doctors</a>
+          <a href="about-as.html">About US</a>
         </nav>
-           
-    </header>
-    
-    <main>
+      </header>
+
+      <main>
         <section>
-            <div class="overlay"></div>
-            <div class="container">
-                <div class="row ">
-                    <div class="col-md-9 ftco-animate text-center fadeInUp ftco-animated">
-                        <h1 class="mb-2 bread">Appointment</h1>
-                        <!-- <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home > <i
+          <div class="overlay"></div>
+          <div class="container">
+            <div class="row">
+              <div
+                class="col-md-9 ftco-animate text-center fadeInUp ftco-animated"
+              >
+                <h1 class="mb-2 bread">Appointment</h1>
+                <!-- <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home > <i
                                         class="ion-ios-arrow-forward"> </i></a></span> <span>Appointment <i
                                     class="ion-ios-arrow-forward"></i></span></p> -->
-                    </div>
-                </div>
+              </div>
             </div>
+          </div>
         </section>
         <div class="contaner">
-            <div id="first">
-                <div class="firstDive">
-                    <div id="heding1">
-                        <span class="consultation">Consultation</span>
-                        <h2>Free Consultation</h2>
-                        <p>Providing medical consultation to patients. Book an appointment by filling the form.</p>
-                    </div>
-                    <form action="" id="AppointmentForm" autocomplete="off">
-                        <div class="fildContaner">
-                            <div class="formFild">
-                                <input type="text" id="firstName" placeholder="First Name" class="iput-text" required>
-                            </div>
-                            <div class="formFild">
-                                <input type="text" id="lastName" placeholder="Last Name" class="iput-text" required>
-                            </div>
-                        </div>
-                        <div class="fildContaner">
-                            <div class="formFild">
-                                <div class="icon"><span class="ion-ios-arrow-down"></span></div>
-                                <select name="" id="services" class="iput-text">
-                                   <option value="">Select Your Services</option>
-                                   <option value=""></option>
-                                   <option value="">Select Your Services</option>
-                                   <option value="">Select Your Services</option>
-                                   <option value="">Select Your Services</option>
-                                </select>
-                            </div>
-                            <div class="formFild">
-                                <input type="text" id="phone" placeholder="Phone" class="iput-text" required>
-                            </div>
-                        </div>
-                        <div class="fildContaner">
-                            <div class="formFild">
-                                <div class="icon"><span class="ion-md-calendar"></span></div>
-                                <input type="date" id="idDate" placeholder="Date" class="iput-text" required>
-                            </div>
-                            <div class="formFild">
-                                <div class="icon"><span class="ion-ios-clock"></span></div>
-                                <input type="time" id="idTime" placeholder="Time" autocomplete="off" class="iput-text" required>
-                            </div>
-                        </div>
-
-                        <div class="fildContaner">
-                            <div class="formFild">
-                                <textarea name="" id="idTextarea" cols="30" rows="2" class="iput-text"
-                                    placeholder="Add description"></textarea>
-                            </div>
-                            <div class="formFild">
-
-                                <input type="submit" value="Appointment" id="buttonID" class="iput-text" >
-
-                            </div>
-                        </div>
-
-                    </form>
+          <div id="first">
+            <div class="firstDive">
+              <div id="heding1">
+                <span class="consultation">Consultation</span>
+                <h2>Free Consultation</h2>
+                <p>
+                  Providing medical consultation to patients. Book an
+                  appointment by filling the form.
+                </p>
+              </div>
+              <form action="" id="AppointmentForm" autocomplete="off">
+                <div class="fildContaner">
+                  <div class="formFild">
+                    <input
+                      type="text"
+                      id="firstName"
+                      placeholder="First Name"
+                      class="iput-text"
+                      required
+                    />
+                  </div>
+                  <div class="formFild">
+                    <input
+                      type="text"
+                      id="lastName"
+                      placeholder="Last Name"
+                      class="iput-text"
+                      required
+                    />
+                  </div>
                 </div>
-            </div>
-            <div id="second">
-
-                <div class="dev-second-contener">
-                    <div class="second-div">
-                        <div>
-                            <strong id="strong1">9</strong>
-                            <span>Years of Experienced</span>
-                        </div>
+                <div class="fildContaner">
+                  <div class="formFild">
+                    <div class="icon">
+                      <span class="ion-ios-arrow-down"></span>
                     </div>
-                    <div class="second-div">
-                        <div>
-                            <strong id="strong2">1,500</strong>
-                            <span>Happy Patients</span>
-                        </div>
+                    <select name="" id="services" class="iput-text">
+                      <option value="">Select Your Services</option>
+                      <option value=""></option>
+                      <option value="">Select Your Services</option>
+                      <option value="">Select Your Services</option>
+                      <option value="">Select Your Services</option>
+                    </select>
+                  </div>
+                  <div class="formFild">
+                    <input
+                      type="text"
+                      id="phone"
+                      placeholder="Phone"
+                      class="iput-text"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="fildContaner">
+                  <div class="formFild">
+                    <div class="icon">
+                      <span class="ion-md-calendar"></span>
                     </div>
-                    <div class="second-div">
-                        <div>
-                            <strong id="strong3">5</strong>
-                            <span>Number of Doctors</span>
-                        </div>
-                    </div>
-                    <div class="second-div">
-                        <div>
-                            <strong id="strong4">30</strong>
-                            <span>Number of Staffs</span>
-                        </div>
-
-                    </div>
+                    <input
+                      type="date"
+                      id="idDate"
+                      placeholder="Date"
+                      class="iput-text"
+                      required
+                    />
+                  </div>
+                  <div class="formFild">
+                    <div class="icon"><span class="ion-ios-clock"></span></div>
+                    <input
+                      type="time"
+                      id="idTime"
+                      placeholder="Time"
+                      autocomplete="off"
+                      class="iput-text"
+                      required
+                    />
+                  </div>
                 </div>
 
-
+                <div class="fildContaner">
+                  <div class="formFild">
+                    <textarea
+                      name=""
+                      id="idTextarea"
+                      cols="30"
+                      rows="2"
+                      class="iput-text"
+                      placeholder="Add description"
+                    ></textarea>
+                  </div>
+                  <div class="formFild">
+                    <input
+                      type="submit"
+                      value="Appointment"
+                      id="buttonID"
+                      class="iput-text"
+                    />
+                  </div>
+                </div>
+              </form>
             </div>
+          </div>
+          <div id="second">
+            <div class="dev-second-contener">
+              <div class="second-div">
+                <div>
+                  <strong id="strong1">9</strong>
+                  <span>Years of Experienced</span>
+                </div>
+              </div>
+              <div class="second-div">
+                <div>
+                  <strong id="strong2">1,500</strong>
+                  <span>Happy Patients</span>
+                </div>
+              </div>
+              <div class="second-div">
+                <div>
+                  <strong id="strong3">5</strong>
+                  <span>Number of Doctors</span>
+                </div>
+              </div>
+              <div class="second-div">
+                <div>
+                  <strong id="strong4">30</strong>
+                  <span>Number of Staffs</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-
-    </main>
+      </main>
+    </div>
     <footer>
-        <p>&copy; Copyright. All rights reserved</p>
-        <div>
-            <ul>
-                <i class="fab fa-facebook-square"></i>
-                <i class="fab fa-twitter-square"></i>
-                <i class="fab fa-google-plus-square"></i>
-                <i class="fab fa-instagram-square"></i>
-            </ul>
-            <p></p>
-        </div>
+      <p>&copy; Copyright. All rights reserved</p>
+      <div>
+        <ul>
+          <i class="fab fa-facebook-square"></i>
+          <i class="fab fa-twitter-square"></i>
+          <i class="fab fa-google-plus-square"></i>
+          <i class="fab fa-instagram-square"></i>
+        </ul>
+        <p></p>
+      </div>
     </footer>
-
 
     <script src="./js/AppintmentCounter.js"></script>
     <script src="./js/AppintmentApp.js"></script>
-    </div>
-</body>
-
+  </body>
 </html>
