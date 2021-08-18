@@ -5,6 +5,7 @@ we will have a list of  medication for the popular Diseases and with its locatio
 and we will add a list for ousr site to make the customer chouse one of 10 pupilar Diseases
 and then we will show for him like a blog about it and how he can treat his self and give him 
 a suggestion for the best treatment alsow we will have a list for the best medical places in our aria
+[live url link](https://sweet-developer.github.io/medical-clinic/index.html)
 
 Team members
 
