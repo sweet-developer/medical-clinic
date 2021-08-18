@@ -80,6 +80,8 @@ function MakeApointment(e)
    console.log(patientAppintmetn1.patients);
    
    patientAppintmetn1.saveTolocalStorage();
+   window.location.href='./AppintReview.html';
+
 
 
 }
